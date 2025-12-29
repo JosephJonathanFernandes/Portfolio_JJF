@@ -16,7 +16,7 @@ export {
 export const personalInfo = {
   name: 'Joseph Jonathan Fernandes',
   title: 'Embedded-first Software Engineer',
-  tagline: 'Building reliable software from embedded C to modern web platforms',
+  tagline: 'Currently learning Java, system design, Next.js, and deep learning. Building reliable software from embedded C to modern web platforms',
   email: 'josephfernandes273@gmail.com',
   github: 'https://github.com/JosephJonathanFernandes',
   linkedin: 'https://www.linkedin.com/in/joseph-jonathan-fernandes/',
@@ -25,7 +25,7 @@ export const personalInfo = {
   education: {
     degree: 'Computer Engineering (AI/ML Honors)',
     cgpa: '9.778',
-    status: 'Final Year Student'
+    status: '2022-2026'
   }
 };
 
@@ -38,7 +38,7 @@ export const additionalExperience = [
     id: 'visteon',
     company: 'Visteon Corporation',
     role: 'Software Intern - Embedded Systems',
-    duration: 'July 2025 – September 2025',
+    duration: 'July 2024 – September 2024',
     description: 'Embedded systems testing and development focusing on AUTOSAR compliance and quality assurance.',
     technologies: ['C/C++', 'AUTOSAR', 'VectorCAST', 'MISRA-C']
   }
@@ -46,8 +46,7 @@ export const additionalExperience = [
 
 // Additional achievements (verified from resume)
 export const additionalAchievements = [
-  'NASA Space Apps Hackathon Winner',
-  'Top 7/80+ teams at HackIndia Spark 3',
+  'HackAura Hackathon Winner (1st Place)',
   'Multiple hackathon victories and competitive programming success',
   'CodeChef Rating: 1025',
   'HackerRank: C, Python, SQL, Java badges certified',
