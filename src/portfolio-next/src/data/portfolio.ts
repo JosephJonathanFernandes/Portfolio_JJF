@@ -38,7 +38,7 @@ export const additionalExperience = [
     id: 'visteon',
     company: 'Visteon Corporation',
     role: 'Software Intern - Embedded Systems',
-    duration: 'July 2024 – September 2024',
+    duration: 'July 2025 – September 2025',
     description: 'Embedded systems testing and development focusing on AUTOSAR compliance and quality assurance.',
     technologies: ['C/C++', 'AUTOSAR', 'VectorCAST', 'MISRA-C']
   }
@@ -47,7 +47,7 @@ export const additionalExperience = [
 // Additional achievements (verified from resume)
 export const additionalAchievements = [
   'HackAura Hackathon Winner (1st Place)',
-  'Multiple hackathon victories and competitive programming success',
+  'One hackathon victory and multiple competitive programming successes',
   'CodeChef Rating: 1025',
   'HackerRank: C, Python, SQL, Java badges certified',
   'State-level technical quiz co-organizer'

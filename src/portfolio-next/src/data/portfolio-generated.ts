@@ -9,7 +9,7 @@ export interface Project {
   techStack: string[];
   githubUrl: string;
   demoUrl?: string;
-  category: 'ai-ml' | 'web' | 'embedded' | 'security' | 'automation';
+  category: 'ai-ml' | 'web' | 'embedded' | 'security' | 'automation' | 'MeTTa Language';
   featured: boolean;
   achievement?: string;
 }
@@ -46,7 +46,7 @@ export const projects: Project[] = [
       "Multi-agent AI"
     ],
     "githubUrl": "https://github.com/JosephJonathanFernandes/astrodesk",
-    "category": "web",
+    "category": "ai-ml",
     "featured": true
   },
   {
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     "id": "hackindia-spark-3-2025-wizcoders",
     "title": "HackIndia Spark 3 2025 WizCoders",
     "description": "Knowledge graph-based task scheduling system with dependency management.",
-    "longDescription": "HackIndia Spark 3 Winner Top 7 out of 80+ teams in Goa region. Problem Traditional task scheduling systems lack intelligent dependency management and reasoning capabilities. Innovation TaskExpert uses knowledge graphs and advanced reasoning to create intelligent task scheduling with automatic dependency resolution. Core Features Graph-based task representation Automatic dependency detection Intelligent scheduling algorithms Reasoning engine for complex scenarios Interactive visualization Technology Stack Python with MeTTa programming Hyperon framework for reasoning AtomSpace for knowledge representation Modern web interface",
+    "longDescription": "HackIndia Spark 3  Top 7 out of 80+ teams in Goa region. Problem Traditional task scheduling systems lack intelligent dependency management and reasoning capabilities. Innovation TaskExpert uses knowledge graphs and advanced reasoning to create intelligent task scheduling with automatic dependency resolution. Core Features Graph-based task representation Automatic dependency detection Intelligent scheduling algorithms Reasoning engine for complex scenarios Interactive visualization Technology Stack Python with MeTTa programming Hyperon framework for reasoning AtomSpace for knowledge representation Modern web interface",
     "techStack": [
       "Python",
       "MeTTa",
@@ -115,16 +115,16 @@ export const projects: Project[] = [
       "Knowledge Graphs"
     ],
     "githubUrl": "https://github.com/JosephJonathanFernandes/HackIndia-Spark-3-2025-WizCoders",
-    "category": "embedded",
+    "category": "MeTTa Language",
     "featured": false,
-    "achievement": "## HackIndia Spark 3 Winner"
+    "achievement": "## HackIndia Spark 3 Top 7"
   }
 ];
 
 export const skills: Skill[] = [
   {
     "name": "TypeScript",
-    "level": "Expert",
+    "level": "Familiar",
     "category": "languages"
   },
   {
@@ -134,7 +134,7 @@ export const skills: Skill[] = [
   },
   {
     "name": "JavaScript",
-    "level": "Expert",
+    "level": "Familiar",
     "category": "languages"
   },
   {
@@ -149,19 +149,15 @@ export const skills: Skill[] = [
   },
   {
     "name": "Embedded C",
-    "level": "Expert",
+    "level": "Familiar",
     "category": "languages"
   },
   {
     "name": "React",
-    "level": "Proficient",
+    "level": "Familiar",
     "category": "frameworks"
   },
-  {
-    "name": "Next.js",
-    "level": "Proficient",
-    "category": "frameworks"
-  },
+  
   {
     "name": "FastAPI",
     "level": "Proficient",
@@ -174,12 +170,12 @@ export const skills: Skill[] = [
   },
   {
     "name": "PyTorch",
-    "level": "Proficient",
+    "level": "Familiar",
     "category": "frameworks"
   },
   {
     "name": "Machine Learning",
-    "level": "Proficient",
+    "level": "Familiar",
     "category": "frameworks"
   },
   {
@@ -204,7 +200,7 @@ export const experience: Experience[] = [];
 export const personalInfo = {
   "name": "Joseph Jonathan Fernandes",
   "title": "Software Developer",
-  "tagline": "Building software solutions with 6+ public projects",
+  "tagline": "Building software solutions with 10+ public projects",
   "email": "josephfernandes273@gmail.com",
   "github": "https://github.com/JosephJonathanFernandes",
   "location": "India",
