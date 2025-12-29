@@ -1,0 +1,227 @@
+{
+  "user": {
+    "login": "JosephJonathanFernandes",
+    "id": 12345678,
+    "name": "Joseph Jonathan Fernandes",
+    "bio": "Embedded-first Software Engineer | Full-Stack Developer | AI/ML Enthusiast",
+    "location": "India",
+    "email": "josephfernandes273@gmail.com",
+    "blog": "https://joseph-fernandes.vercel.app",
+    "company": null,
+    "public_repos": 25,
+    "public_gists": 5,
+    "followers": 150,
+    "following": 80,
+    "created_at": "2020-05-15T00:00:00Z",
+    "updated_at": "2025-12-29T00:00:00Z"
+  },
+  "repositories": [
+    {
+      "id": 1,
+      "name": "Nasa-Space-Hackathon-WizCoders-frontend",
+      "full_name": "JosephJonathanFernandes/Nasa-Space-Hackathon-WizCoders-frontend",
+      "description": "NASA Space Apps Challenge Winner - AI-powered exoplanet detection platform with RAG chatbot",
+      "html_url": "https://github.com/JosephJonathanFernandes/Nasa-Space-Hackathon-WizCoders-frontend",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 45000,
+        "JavaScript": 12000,
+        "CSS": 8000
+      },
+      "topics": ["react", "nextjs", "ai", "machine-learning", "space", "nasa", "hackathon"],
+      "created_at": "2025-10-01T00:00:00Z",
+      "updated_at": "2025-10-15T00:00:00Z",
+      "pushed_at": "2025-10-15T00:00:00Z",
+      "size": 1250,
+      "stargazers_count": 45,
+      "watchers_count": 45,
+      "forks_count": 12,
+      "readme": "# NASA Space Apps Challenge - Exoscope\n\n## Problem\nAstronomers face challenges in efficiently discovering and analyzing exoplanets from vast astronomical datasets. Current methods lack intelligent assistance for data interpretation and user interaction.\n\n## Solution\nExoscope provides an AI-powered platform for exoplanet detection with a RAG chatbot that helps users understand astronomical data through natural language interactions.\n\n## Features\n- Real-time exoplanet discovery algorithms\n- Interactive data visualization\n- AI-powered conversational assistant\n- Modern React/TypeScript frontend\n\n## Tech Stack\n- React, TypeScript, Tailwind CSS\n- FastAPI backend\n- Machine Learning models\n- RAG implementation\n\n## Results\n- NASA Space Apps Challenge Winner\n- Used by 100+ students\n- Demonstrated practical AI application in astronomy",
+      "commitsCount": 85,
+      "maturity": {
+        "level": "advanced",
+        "score": 8
+      },
+      "techStack": ["React", "TypeScript", "Next.js", "FastAPI", "Machine Learning", "RAG", "Tailwind CSS"],
+      "description": {
+        "short": "NASA Space Apps Challenge Winner - AI-powered exoplanet detection platform with RAG chatbot.",
+        "long": "Problem Astronomers face challenges in efficiently discovering and analyzing exoplanets from vast astronomical datasets. Current methods lack intelligent assistance for data interpretation and user interaction. Solution Exoscope provides an AI-powered platform for exoplanet detection with a RAG chatbot that helps users understand astronomical data through natural language interactions. Features Real-time exoplanet discovery algorithms Interactive data visualization AI-powered conversational assistant Modern React/TypeScript frontend Tech Stack React, TypeScript, Tailwind CSS FastAPI backend Machine Learning models RAG implementation Results NASA Space Apps Challenge Winner Used by 100+ students Demonstrated practical AI application in astronomy"
+      }
+    },
+    {
+      "id": 2,
+      "name": "astrodesk",
+      "full_name": "JosephJonathanFernandes/astrodesk",
+      "description": "Space exploration platform with real-time NASA API integration and multi-agent AI",
+      "html_url": "https://github.com/JosephJonathanFernandes/astrodesk",
+      "language": "Python",
+      "languages": {
+        "Python": 52000,
+        "HTML": 8000,
+        "CSS": 5000,
+        "JavaScript": 3000
+      },
+      "topics": ["python", "flask", "nasa-api", "machine-learning", "space", "ai"],
+      "created_at": "2025-09-15T00:00:00Z",
+      "updated_at": "2025-11-20T00:00:00Z",
+      "pushed_at": "2025-11-20T00:00:00Z",
+      "size": 980,
+      "stargazers_count": 32,
+      "watchers_count": 32,
+      "forks_count": 8,
+      "readme": "# AstroDesk\n\n## Overview\nA comprehensive space exploration platform that integrates real-time NASA APIs with multi-agent AI systems for enhanced astronomical data analysis and storytelling.\n\n## Features\n- Real-time NEO (Near Earth Objects) tracking\n- Multi-agent AI story generation\n- 3D planetary visualization\n- ISS tracking with live data\n- AI chatbot with streaming responses\n\n## Architecture\n- Flask backend with async capabilities\n- Groq LLM integration for AI features\n- Skyfield for astronomical calculations\n- Multiple NASA API integrations\n\n## Tech Stack\n- Python, Flask, AsyncIO\n- Groq AI, Multi-agent systems\n- Skyfield, NASA APIs\n- Modern web technologies",
+      "commitsCount": 67,
+      "maturity": {
+        "level": "advanced",
+        "score": 7
+      },
+      "techStack": ["Python", "Flask", "Groq LLM", "Skyfield", "NASA APIs", "Multi-agent AI"],
+      "description": {
+        "short": "Space exploration platform with real-time NASA API integration and multi-agent AI.",
+        "long": "A comprehensive space exploration platform that integrates real-time NASA APIs with multi-agent AI systems for enhanced astronomical data analysis and storytelling. Features Real-time NEO (Near Earth Objects) tracking Multi-agent AI story generation 3D planetary visualization ISS tracking with live data AI chatbot with streaming responses Architecture Flask backend with async capabilities Groq LLM integration for AI features Skyfield for astronomical calculations Multiple NASA API integrations Tech Stack Python, Flask, AsyncIO Groq AI, Multi-agent systems Skyfield, NASA APIs Modern web technologies"
+      }
+    },
+    {
+      "id": 3,
+      "name": "EcoSort-AI",
+      "full_name": "JosephJonathanFernandes/EcoSort-AI",
+      "description": "AI-powered waste segregation with gamification and eco-points system",
+      "html_url": "https://github.com/JosephJonathanFernandes/EcoSort-AI",
+      "language": "Python",
+      "languages": {
+        "Python": 38000,
+        "HTML": 12000,
+        "CSS": 8000,
+        "JavaScript": 5000
+      },
+      "topics": ["python", "flask", "machine-learning", "computer-vision", "pytorch", "environment"],
+      "created_at": "2025-08-20T00:00:00Z",
+      "updated_at": "2025-09-10T00:00:00Z",
+      "pushed_at": "2025-09-10T00:00:00Z",
+      "size": 756,
+      "stargazers_count": 28,
+      "watchers_count": 28,
+      "forks_count": 15,
+      "readme": "# EcoSort-AI\n\n## Problem Statement\nTraditional waste management systems lack intelligent sorting capabilities, leading to inefficient recycling processes and environmental impact.\n\n## Solution\nEcoSort-AI uses computer vision and machine learning to automatically classify waste into 6 categories with high accuracy, providing eco-harm scores and disposal recommendations.\n\n## Key Features\n- 6-category waste classification\n- Real-time image processing\n- Eco-harm scoring system\n- Gamified recycling with eco-points\n- User engagement analytics\n\n## Technical Implementation\n- PyTorch-based computer vision models\n- Flask web application\n- Responsive HTML/CSS interface\n- Model deployment and inference optimization",
+      "commitsCount": 52,
+      "maturity": {
+        "level": "advanced",
+        "score": 7
+      },
+      "techStack": ["Python", "Flask", "PyTorch", "Computer Vision", "HTML", "CSS"],
+      "description": {
+        "short": "AI-powered waste segregation with gamification and eco-points system.",
+        "long": "Problem Statement Traditional waste management systems lack intelligent sorting capabilities, leading to inefficient recycling processes and environmental impact. Solution EcoSort-AI uses computer vision and machine learning to automatically classify waste into 6 categories with high accuracy, providing eco-harm scores and disposal recommendations. Key Features 6-category waste classification Real-time image processing Eco-harm scoring system Gamified recycling with eco-points User engagement analytics Technical Implementation PyTorch-based computer vision models Flask web application Responsive HTML/CSS interface Model deployment and inference optimization"
+      }
+    },
+    {
+      "id": 4,
+      "name": "CrowdSense",
+      "full_name": "JosephJonathanFernandes/CrowdSense",
+      "description": "Real-time disaster detection system using social media analysis and NLP",
+      "html_url": "https://github.com/JosephJonathanFernandes/CrowdSense",
+      "language": "Python",
+      "languages": {
+        "Python": 42000,
+        "JavaScript": 15000,
+        "HTML": 8000,
+        "CSS": 6000
+      },
+      "topics": ["python", "flask", "nlp", "machine-learning", "twitter-api", "disaster-management"],
+      "created_at": "2025-07-10T00:00:00Z",
+      "updated_at": "2025-08-25T00:00:00Z",
+      "pushed_at": "2025-08-25T00:00:00Z",
+      "size": 834,
+      "stargazers_count": 24,
+      "watchers_count": 24,
+      "forks_count": 9,
+      "readme": "# CrowdSense\n\n## Challenge\nDisaster response teams need real-time situational awareness from social media during crises, but current systems lack sophisticated analysis capabilities.\n\n## Approach\nCrowdSense implements advanced NLP and anomaly detection algorithms to analyze social media streams for disaster-related information.\n\n## Capabilities\n- Real-time tweet analysis with streaming APIs\n- Anomaly detection using Z-score and EWMA algorithms\n- Named Entity Recognition for location extraction\n- Interactive map visualization with Leaflet\n- Automated SMS alerts via Twilio integration\n\n## Architecture\n- Python/Flask backend with async processing\n- spaCy for advanced NLP tasks\n- SQLite for efficient data storage\n- Twilio API for SMS notifications",
+      "commitsCount": 48,
+      "maturity": {
+        "level": "intermediate",
+        "score": 6
+      },
+      "techStack": ["Python", "Flask", "spaCy", "Twilio", "SQLite", "Leaflet", "NLP"],
+      "description": {
+        "short": "Real-time disaster detection system using social media analysis and NLP.",
+        "long": "Challenge Disaster response teams need real-time situational awareness from social media during crises, but current systems lack sophisticated analysis capabilities. Approach CrowdSense implements advanced NLP and anomaly detection algorithms to analyze social media streams for disaster-related information. Capabilities Real-time tweet analysis with streaming APIs Anomaly detection using Z-score and EWMA algorithms Named Entity Recognition for location extraction Interactive map visualization with Leaflet Automated SMS alerts via Twilio integration Architecture Python/Flask backend with async processing spaCy for advanced NLP tasks SQLite for efficient data storage Twilio API for SMS notifications"
+      }
+    },
+    {
+      "id": 5,
+      "name": "advanced-port-scanner",
+      "full_name": "JosephJonathanFernandes/advanced-port-scanner",
+      "description": "Multi-threaded network security scanner with comprehensive vulnerability assessment",
+      "html_url": "https://github.com/JosephJonathanFernandes/advanced-port-scanner",
+      "language": "Python",
+      "languages": {
+        "Python": 35000,
+        "JavaScript": 8000
+      },
+      "topics": ["python", "networking", "security", "scanner", "multithreading"],
+      "created_at": "2025-06-01T00:00:00Z",
+      "updated_at": "2025-07-15T00:00:00Z",
+      "pushed_at": "2025-07-15T00:00:00Z",
+      "size": 567,
+      "stargazers_count": 18,
+      "watchers_count": 18,
+      "forks_count": 7,
+      "readme": "# Advanced Port Scanner\n\n## Purpose\nA comprehensive network security tool for penetration testing and network analysis with advanced scanning capabilities.\n\n## Features\n- Multi-threaded scanning for improved performance\n- CIDR notation support for subnet scanning\n- Banner grabbing and service detection\n- Vulnerability assessment algorithms\n- Export functionality for reports\n- GUI interface with matplotlib visualizations\n\n## Technical Details\n- Socket programming with timeout handling\n- Threading for concurrent operations\n- Tkinter GUI with responsive design\n- Matplotlib for result visualization\n- Comprehensive error handling and logging",
+      "commitsCount": 34,
+      "maturity": {
+        "level": "intermediate",
+        "score": 5
+      },
+      "techStack": ["Python", "Tkinter", "Matplotlib", "Socket Programming", "Threading"],
+      "description": {
+        "short": "Multi-threaded network security scanner with comprehensive vulnerability assessment.",
+        "long": "Purpose A comprehensive network security tool for penetration testing and network analysis with advanced scanning capabilities. Features Multi-threaded scanning for improved performance CIDR notation support for subnet scanning Banner grabbing and service detection Vulnerability assessment algorithms Export functionality for reports GUI interface with matplotlib visualizations Technical Details Socket programming with timeout handling Threading for concurrent operations Tkinter GUI with responsive design Matplotlib for result visualization Comprehensive error handling and logging"
+      }
+    },
+    {
+      "id": 6,
+      "name": "HackIndia-Spark-3-2025-WizCoders",
+      "full_name": "JosephJonathanFernandes/HackIndia-Spark-3-2025-WizCoders",
+      "description": "Knowledge graph-based task scheduling system with dependency management",
+      "html_url": "https://github.com/JosephJonathanFernandes/HackIndia-Spark-3-2025-WizCoders",
+      "language": "Python",
+      "languages": {
+        "Python": 28000,
+        "JavaScript": 12000
+      },
+      "topics": ["python", "knowledge-graph", "task-scheduling", "hyperon", "atomspace"],
+      "created_at": "2025-05-20T00:00:00Z",
+      "updated_at": "2025-06-10T00:00:00Z",
+      "pushed_at": "2025-06-10T00:00:00Z",
+      "size": 423,
+      "stargazers_count": 15,
+      "watchers_count": 15,
+      "forks_count": 5,
+      "readme": "# TaskExpert - Knowledge Graph Task Scheduler\n\n## HackIndia Spark 3 Winner\nTop 7 out of 80+ teams in Goa region.\n\n## Problem\nTraditional task scheduling systems lack intelligent dependency management and reasoning capabilities.\n\n## Innovation\nTaskExpert uses knowledge graphs and advanced reasoning to create intelligent task scheduling with automatic dependency resolution.\n\n## Core Features\n- Graph-based task representation\n- Automatic dependency detection\n- Intelligent scheduling algorithms\n- Reasoning engine for complex scenarios\n- Interactive visualization\n\n## Technology Stack\n- Python with MeTTa programming\n- Hyperon framework for reasoning\n- AtomSpace for knowledge representation\n- Modern web interface",
+      "commitsCount": 41,
+      "maturity": {
+        "level": "intermediate",
+        "score": 5
+      },
+      "techStack": ["Python", "MeTTa", "Hyperon", "AtomSpace", "Knowledge Graphs"],
+      "description": {
+        "short": "Knowledge graph-based task scheduling system with dependency management.",
+        "long": "HackIndia Spark 3 Winner Top 7 out of 80+ teams in Goa region. Problem Traditional task scheduling systems lack intelligent dependency management and reasoning capabilities. Innovation TaskExpert uses knowledge graphs and advanced reasoning to create intelligent task scheduling with automatic dependency resolution. Core Features Graph-based task representation Automatic dependency detection Intelligent scheduling algorithms Reasoning engine for complex scenarios Interactive visualization Technology Stack Python with MeTTa programming Hyperon framework for reasoning AtomSpace for knowledge representation Modern web interface"
+      }
+    }
+  ],
+  "skills": {
+    "languages": ["TypeScript", "Python", "JavaScript", "C", "C++", "Embedded C"],
+    "frameworks": ["React", "Next.js", "FastAPI", "Flask", "PyTorch", "Machine Learning"],
+    "databases": ["SQLite"],
+    "tools": ["Git", "Linux"],
+    "cloud": []
+  },
+  "recommendations": [
+    "Add comprehensive README files to all repositories with setup instructions, architecture diagrams, and API documentation.",
+    "Consider diversifying your tech stack to include more frameworks and cloud technologies for broader expertise.",
+    "Focus on developing more complex, production-ready projects with comprehensive testing and deployment strategies.",
+    "Improve documentation quality by including more detailed technical specifications and usage examples.",
+    "Maintain consistent development activity to demonstrate ongoing learning and project evolution."
+  ]
+}
