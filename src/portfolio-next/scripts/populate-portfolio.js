@@ -115,9 +115,9 @@ function inferCategory(techStack) {
 function extractAchievement(repo) {
   const readme = repo.readme || '';
 
-  // Look for achievement indicators
+  // Look for achievement indicators (only actual wins, not rankings like "top 7")
   const achievementPatterns = [
-    /(?:winner|1st|first|champion|top \d+)/i,
+    /(?:winner|1st|first|champion)/i,
     /(?:hackathon|competition|contest)/i,
     /(?:award|prize|recognition)/i
   ];

@@ -3,7 +3,12 @@ export interface GitHubRepo {
   id: number;
   name: string;
   full_name: string;
-  description: string;
+  description: string | {
+    shortDescription: string;
+    longDescription: string;
+    problemStatement?: string;
+    outcomes?: string[];
+  };
   html_url: string;
   clone_url: string;
   language: string;
@@ -18,9 +23,14 @@ export interface GitHubRepo {
   forks_count: number;
   archived: boolean;
   disabled: boolean;
-  readme?: string;
+  readme?: string | null;
   commits_count?: number;
   contributors_count?: number;
+  maturity?: {
+    maturity: 'beginner' | 'intermediate' | 'advanced';
+    score: number;
+  };
+  techStack?: string[];
 }
 
 export interface GitHubUser {
@@ -323,7 +333,7 @@ export class GitHubAnalyzer {
 
           const maturity = this.analyzeProjectMaturity(repo, readme, commitsCount);
           const techStack = this.extractTechStack(languages, repo.topics);
-          const description = this.extractProjectDescription(readme, repo.description || '');
+          const description = this.extractProjectDescription(readme, typeof repo.description === 'string' ? repo.description : '');
 
           return {
             ...repo,

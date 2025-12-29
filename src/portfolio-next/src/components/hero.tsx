@@ -135,7 +135,7 @@ export default function Hero() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  {personalInfo.name.split(' ')[0]}
+                  {personalInfo.name.split(' ')[0]} {personalInfo.name.split(' ')[1]} {personalInfo.name.split(' ')[2]}
                 </span>
                 {isHovering && (
                   <motion.div

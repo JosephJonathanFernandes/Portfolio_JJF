@@ -176,9 +176,8 @@ export default function Experience() {
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Competitions & Hackathons</h4>
               </div>
               <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <li>• NASA Space Apps Challenge Winner</li>
+                <li>• HackAura Winner</li>
                 <li>• HackIndia Top 7 out of 80+ teams</li>
-                <li>• Global AI Buildathon Winner</li>
                 <li>• Multiple coding competition wins</li>
               </ul>
             </motion.div>
@@ -212,7 +211,7 @@ export default function Experience() {
                   <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
                     <div className="flex items-center space-x-3 mb-3">
                       <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
-                      <span className="font-semibold text-gray-900 dark:text-white">2025 - Present</span>
+                      <span className="font-semibold text-gray-900 dark:text-white">July - September 2025 </span>
                     </div>
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                       Software Intern at Visteon Corporation
@@ -238,10 +237,10 @@ export default function Experience() {
                       <span className="font-semibold text-gray-900 dark:text-white">2023 - 2025</span>
                     </div>
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                      Competitive Programming & Hackathons
+                      Competitive Programming, Quiz and Debate Competitions
                     </h4>
                     <p className="text-gray-600 dark:text-gray-300 text-sm">
-                      Multiple hackathon wins, competitive coding achievements, and project development
+                      One hackathon win, multiple competitive coding achievements, and project development
                     </p>
                   </div>
                 </div>

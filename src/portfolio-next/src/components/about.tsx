@@ -8,7 +8,7 @@ export default function About() {
   const stats = [
     { icon: Code, label: 'Years Coding', value: '4+' },
     { icon: Cpu, label: 'Projects Built', value: '10+' },
-    { icon: Award, label: 'Hackathons Won', value: '3+' },
+    { icon: Award, label: 'Hackathons Won', value: '1' },
     { icon: BookOpen, label: 'CGPA', value: personalInfo.education.cgpa }
   ];
 
@@ -50,8 +50,7 @@ export default function About() {
                 This experience solidified my understanding of quality assurance and embedded systems development.
               </p>
               <p>
-                Beyond traditional software engineering, I've won multiple hackathons including the prestigious
-                NASA Space Apps Challenge, where I built an AI-powered exoplanet detection platform. My work
+                Beyond traditional software engineering, I have won one hackathon and multiple competitive coding competitions. My work
                 combines technical expertise with creative problem-solving across domains like space exploration,
                 environmental sustainability, and network security.
               </p>

@@ -138,17 +138,17 @@ export default function Skills() {
               <div className="bg-white/10 rounded-lg p-4">
                 <h4 className="font-semibold mb-2">Currently Learning</h4>
                 <ul className="text-left space-y-1">
-                  <li>• Advanced React Patterns</li>
-                  <li>• Cloud Architecture (AWS)</li>
-                  <li>• Machine Learning Ops</li>
+                  <li>• Java </li>
+                  <li>• Systems Design </li>
+                  <li>• Machine Learning and Deep Learning</li>
                 </ul>
               </div>
               <div className="bg-white/10 rounded-lg p-4">
                 <h4 className="font-semibold mb-2">Areas of Interest</h4>
                 <ul className="text-left space-y-1">
-                  <li>• Edge Computing</li>
-                  <li>• Computer Vision</li>
-                  <li>• Distributed Systems</li>
+                  <li>• IOT </li>
+                  <li>• Image Processing and Computer Vision</li>
+                  <li>• AI/ML and Deep Learning </li>
                 </ul>
               </div>
               <div className="bg-white/10 rounded-lg p-4">

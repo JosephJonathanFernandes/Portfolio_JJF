@@ -23,7 +23,7 @@ export const personalInfo = {
   gitroll: 'https://gitroll.io/profile/u4C3j8q7Z5Dfo3CM3DGcEeo9A8Fn2',
   location: 'India',
   education: {
-    degree: 'Computer Engineering (AI/ML Honors)',
+    degree: 'Computer Engineering (AI/ML Honors) - Academic excellence with 9.778 CGPA, focusing on AI/ML and software engineering',
     cgpa: '9.778',
     status: '2022-2026'
   }

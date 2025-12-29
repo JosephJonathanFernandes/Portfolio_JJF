@@ -33,6 +33,24 @@ export interface Experience {
 
 export const projects: Project[] = [
   {
+    "id": "nasa-space-hackathon-wizcoders-frontend",
+    "title": "Nasa Space Hackathon WizCoders Frontend",
+    "description": "NASA Space Apps Challenge - AI-powered exoplanet detection platform with RAG chatbot.",
+    "longDescription": "Problem Astronomers face challenges in efficiently discovering and analyzing exoplanets from vast astronomical datasets. Current methods lack intelligent assistance for data interpretation and user interaction. Solution Exoscope provides an AI-powered platform for exoplanet detection with a RAG chatbot that helps users understand astronomical data through natural language interactions. Features Real-time exoplanet discovery algorithms Interactive data visualization AI-powered conversational assistant Modern React/TypeScript frontend Tech Stack React, TypeScript, Tailwind CSS FastAPI backend Machine Learning models RAG implementation Results NASA Space Apps Challenge Winner Used by 100+ students Demonstrated practical AI application in astronomy",
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "FastAPI",
+      "Machine Learning",
+      "RAG",
+      "Tailwind CSS"
+    ],
+    "githubUrl": "https://github.com/JosephJonathanFernandes/Nasa-Space-Hackathon-WizCoders-frontend",
+    "category": "ai-ml",
+    "featured": true
+  },
+  {
     "id": "astrodesk",
     "title": "Astrodesk",
     "description": "Space exploration platform with real-time NASA API integration and multi-agent AI.",
@@ -68,9 +86,9 @@ export const projects: Project[] = [
   },
   {
     "id": "crowdsense",
-    "title": "CrowdSense - HackAura Hackathon Winner",
+    "title": "CrowdSense",
     "description": "Real-time disaster detection system using social media analysis and NLP.",
-    "longDescription": "HackAura Hackathon Winner (1st Place) Challenge Disaster response teams need real-time situational awareness from social media during crises, but current systems lack sophisticated analysis capabilities. Approach CrowdSense implements advanced NLP and anomaly detection algorithms to analyze social media streams for disaster-related information. Capabilities Real-time tweet analysis with streaming APIs Anomaly detection using Z-score and EWMA algorithms Named Entity Recognition for location extraction Interactive map visualization with Leaflet Automated SMS alerts via Twilio integration Architecture Python/Flask backend with async processing spaCy for advanced NLP tasks SQLite for efficient data storage Twilio API for SMS notifications",
+    "longDescription": "Challenge Disaster response teams need real-time situational awareness from social media during crises, but current systems lack sophisticated analysis capabilities. Approach CrowdSense implements advanced NLP and anomaly detection algorithms to analyze social media streams for disaster-related information. Capabilities Real-time tweet analysis with streaming APIs Anomaly detection using Z-score and EWMA algorithms Named Entity Recognition for location extraction Interactive map visualization with Leaflet Automated SMS alerts via Twilio integration Architecture Python/Flask backend with async processing spaCy for advanced NLP tasks SQLite for efficient data storage Twilio API for SMS notifications",
     "techStack": [
       "Python",
       "Flask",
@@ -82,8 +100,7 @@ export const projects: Project[] = [
     ],
     "githubUrl": "https://github.com/JosephJonathanFernandes/CrowdSense",
     "category": "ai-ml",
-    "featured": false,
-    "achievement": "## HackAura Hackathon Winner (1st Place)"
+    "featured": false
   },
   {
     "id": "advanced-port-scanner",
@@ -95,8 +112,7 @@ export const projects: Project[] = [
       "Tkinter",
       "Matplotlib",
       "Socket Programming",
-      "Threading",
-      "Cybersecurity"
+      "Threading"
     ],
     "githubUrl": "https://github.com/JosephJonathanFernandes/advanced-port-scanner",
     "category": "security",
@@ -116,8 +132,7 @@ export const projects: Project[] = [
     ],
     "githubUrl": "https://github.com/JosephJonathanFernandes/HackIndia-Spark-3-2025-WizCoders",
     "category": "MeTTa Language",
-    "featured": false,
-    "achievement": "## HackIndia Spark 3 Top 7"
+    "featured": false
   }
 ];
 
@@ -149,7 +164,7 @@ export const skills: Skill[] = [
   },
   {
     "name": "Embedded C",
-    "level": "Familiar",
+    "level": "Expert",
     "category": "languages"
   },
   {
@@ -157,7 +172,6 @@ export const skills: Skill[] = [
     "level": "Familiar",
     "category": "frameworks"
   },
-  
   {
     "name": "FastAPI",
     "level": "Proficient",
@@ -200,7 +214,7 @@ export const experience: Experience[] = [];
 export const personalInfo = {
   "name": "Joseph Jonathan Fernandes",
   "title": "Software Developer",
-  "tagline": "Building software solutions with 10+ public projects",
+  "tagline": "Building software solutions with 6+ public projects",
   "email": "josephfernandes273@gmail.com",
   "github": "https://github.com/JosephJonathanFernandes",
   "location": "India",
