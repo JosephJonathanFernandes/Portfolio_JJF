@@ -1,4 +1,15 @@
 {
   "version": 2,
-  "projects": ["src/portfolio-next"]
+  "builds": [
+    {
+      "src": "src/portfolio-next/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/portfolio-next/"
+    }
+  ]
 }
