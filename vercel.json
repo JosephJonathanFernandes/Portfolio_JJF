@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/portfolio-next/"
+      "dest": "/"
     }
   ],
   "outputDirectory": "src/portfolio-next/.next"
