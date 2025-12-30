@@ -11,7 +11,8 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "analyze-github": "node scripts/analyze-github.js",
-    "populate-portfolio": "node scripts/populate-portfolio.js"
+    "populate-portfolio": "node scripts/populate-portfolio.js",
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
