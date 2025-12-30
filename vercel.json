@@ -11,6 +11,5 @@
       "src": "/(.*)",
       "dest": "src/portfolio-next/"
     }
-  ],
-  "outputDirectory": "src/portfolio-next/.next"
+  ]
 }
