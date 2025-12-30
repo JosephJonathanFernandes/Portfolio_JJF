@@ -1,4 +1,4 @@
 {
-  "framework": "nextjs",
-  "rootDirectory": "src/portfolio-next"
+  "version": 2,
+  "projects": ["src/portfolio-next"]
 }
