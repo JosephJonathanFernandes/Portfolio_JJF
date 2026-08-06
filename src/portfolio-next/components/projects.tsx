@@ -83,8 +83,7 @@ export default function Projects() {
                     )}
                   </div>
                 </div>
-
-                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed whitespace-pre-wrap">
                   {project.longDescription}
                 </p>
 

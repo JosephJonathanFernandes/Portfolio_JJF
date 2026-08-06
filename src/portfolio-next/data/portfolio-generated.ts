@@ -37,12 +37,13 @@ export interface Experience {
 export const projects: Project[] = [
   {
     id: 'vaksetu',
-    title: 'Vaksetu',
-    description: 'Real-time ISL recognition — 98.33% accuracy, 60+ FPS, 93K+ gesture sequences. Final year project.',
+    title: 'Vāksetu',
+    description: 'Real-time ISL recognition — 98.33% accuracy, 60+ FPS, 93K+ gesture sequences across 300 sign classes. Final year project.',
     longDescription:
-      'Real-time Indian Sign Language recognition system (also listed as "ISL Sign-to-Text System" on resume). BiGRU + Spatial Graph Neural Network architecture trained on 93,000+ gesture sequences across 300 sign classes using MediaPipe skeletal landmarks. Achieves 98.33% classification accuracy and 97.84% macro F1-score. Model compressed from 4.2 MB to 1.05 MB via INT8 ONNX quantization, running at 60+ FPS CPU inference (~6.22 ms/frame). HDF5 migration delivered 391x faster dataset loading and 5.4x faster training epochs. Served over FastAPI with WebSocket streaming.',
+      'Vāksetu is a real-time Indian Sign Language recognition system. Its core Sign-to-Text component uses MediaPipe skeletal landmarks with a hybrid BiGRU + Spatial Graph Neural Network, trained on 93,000+ gesture sequences across 300 classes — 98.33% accuracy, 97.84% macro F1. The model was compressed from 4.2 MB to 1.05 MB via INT8 ONNX quantization for 60+ FPS CPU inference at ~6.22ms/frame, with the training pipeline migrated to HDF5 for 391× faster data loading.\n\nAdditional subsystems & demos:\n• Semester 8 Demo: https://vaksetu.akstack.com/home\n• Semester 7 Demo: https://vak-setu.vercel.app/translate\n• Core Platform: https://github.com/ahmedkhan0302/vaksetu\n• CTC Prototype: https://github.com/ZONEboyff/vaksetu-ctc-is\n• Speech-to-Sign: https://github.com/AkaashSamson/Vak-Setu\n• Quiz Module: https://github.com/JosephJonathanFernandes/Quiz_module',
     techStack: ['Python', 'PyTorch', 'MediaPipe', 'ONNX Runtime', 'FastAPI', 'WebSockets', 'HDF5'],
-    githubUrl: 'https://github.com/JosephJonathanFernandes',
+    githubUrl: 'https://github.com/JosephJonathanFernandes/sign_to_text_module',
+    demoUrl: 'https://vaksetu.akstack.com/home',
     category: 'ai-ml',
     featured: true,
     role: 'Lead Developer',
