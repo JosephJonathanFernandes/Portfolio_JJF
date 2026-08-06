@@ -193,6 +193,7 @@ export const projects: Project[] = [
     longDescription:
       'Designed and implemented a low-cost, multi-sensor embedded safety system (ADAS) on an Arduino Uno. Fuses biometric driver-condition monitoring (MQ-3 alcohol sensor, dual IR sensors) with environmental sensing (HC-SR04 ultrasonic, SW-420 vibration, LDR). Features a custom cumulative weighted risk-scoring algorithm with predictive collision detection and non-blocking multi-actuator response.',
     techStack: ['C++', 'Arduino', 'Sensor Fusion', 'Embedded Systems'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/Arduino-Mini-ADAS-prototype',
     category: 'embedded',
     featured: true,
   },
@@ -205,6 +206,17 @@ export const projects: Project[] = [
     techStack: ['C++', 'OOP', 'File Handling'],
     githubUrl: 'https://github.com/JosephJonathanFernandes/inventory-management-cpp',
     category: 'systems',
+    featured: false,
+  },
+  {
+    id: 'yt-blog-agent',
+    title: 'YouTube AI Blog Writer',
+    description: 'AI-powered autonomous agent system using CrewAI to research YouTube videos and generate comprehensive blog posts.',
+    longDescription:
+      'An AI-powered autonomous writing system that researches YouTube video transcripts and metadata, then synthesizes the content into comprehensive, well-structured blog posts using the CrewAI framework and Large Language Models.',
+    techStack: ['Python', 'CrewAI', 'LLMs', 'Agentic AI'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/youtube-blog-writer-agent',
+    category: 'ai-ml',
     featured: false,
   },
 ];
