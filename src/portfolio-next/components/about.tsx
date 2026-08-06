@@ -49,7 +49,7 @@ export default function About() {
               Projects span embedded C through applied AI. The ISL recognition system (final year
                 project) achieves 98.33% accuracy across 300 sign classes at 60+ FPS CPU inference.
                 CmdBridge maps natural-language intent to native OS APIs in C with 94% test coverage.
-                Three top finishes in 2025: 1st at HackAura (national), 1st at Infofest (Goa University),
+                Three top finishes in 2025: 1st at HackAura (national), 1st at Infofest competitive programming (Goa University),
                 and top 7 at HackIndia Spark 3 (80+ teams).
               </p>
               <p>

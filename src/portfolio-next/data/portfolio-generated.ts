@@ -217,7 +217,7 @@ export const experience: Experience[] = [
 
 export const achievements: string[] = [
   'HackAura 2025 — 1st place, national-level hackathon (30 teams)',
-  'Infofest 2025 — 1st place, Goa University',
+  'Infofest 2025 — 1st place competitive programming, Goa University',
   'HackIndia Spark 3 2025 — Top 7 of 80+ teams (Goa)',
   'GATE qualified — CSE and DA (both 2025 and 2026)',
   'NPTEL — 47 courses at top recognition tiers: Domain Scholar (Programming & Data Science), Star, Megastar, Evangelist',
