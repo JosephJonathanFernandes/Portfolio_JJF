@@ -1,4 +1,4 @@
-﻿// Portfolio data — all content verified against user-provided ground truth
+// Portfolio data — all content verified against user-provided ground truth
 // Last verified: 2026-08-06
 
 export interface Project {
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     longDescription:
       'Cross-platform terminal assistant that maps natural-language user intent to native OS APIs instead of executing raw shell commands, eliminating a class of command-injection vulnerabilities. Features secure intent parsing with explain-before-execute validation. 94% automated test coverage across 211 unit and integration tests using AddressSanitizer, UndefinedBehaviorSanitizer, and CI. Supports Windows, Linux, and macOS.',
     techStack: ['C', 'CMake', 'AddressSanitizer', 'UndefinedBehaviorSanitizer', 'CI'],
-    githubUrl: 'https://github.com/JosephJonathanFernandes/CmdBridge',
+    githubUrl: 'https://github.com/JosephJonathanFernandes/CmdBridge-Smart-Cross-OS-Terminal-Helper',
     category: 'systems',
     featured: true,
     role: 'Solo',
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     longDescription:
       'A 21-module multithreaded C++ research platform analyzing the Collatz conjecture across 50 million integers. Multithreading and path caching deliver a 3.3x speedup (11.7s -> 3.6s). Includes a reproducible benchmarking and regression pipeline with R-squared fit up to 0.999995 via statistical modeling in R. Full CMake build system.',
     techStack: ['C++', 'CMake', 'Multithreading', 'R', 'Statistical Modeling'],
-    githubUrl: 'https://github.com/JosephJonathanFernandes/collatz-sequence-analyzer',
+    githubUrl: 'https://github.com/JosephJonathanFernandes/high-performance-collatz-analyzer',
     category: 'systems',
     featured: true,
     role: 'Solo',
