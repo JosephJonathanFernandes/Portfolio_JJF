@@ -9,6 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://joseph-fernandes.vercel.app'),
   title: "Joseph Fernandes | Embedded-first Software Engineer",
   description: "Final-year CE student at GEC Goa, AI/ML Honors, CGPA 9.778. Embedded systems intern at Visteon with accepted PPO. ISL recognition at 98.33% accuracy. 70+ public repos.",
   keywords: ["Joseph Fernandes", "Software Engineer", "Embedded Systems", "AI/ML", "Full-Stack Developer", "Visteon", "NASA Space Apps", "GEC Goa"],
