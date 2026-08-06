@@ -1,9 +1,8 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "src/portfolio-next/package.json",
-      "use": "@vercel/next"
-    }
-  ]
+  "rootDirectory": "src/portfolio-next",
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": ".next"
 }
