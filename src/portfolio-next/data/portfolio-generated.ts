@@ -153,6 +153,39 @@ export const projects: Project[] = [
     featured: false,
     role: 'Solo',
   },
+  {
+    id: 'hackguard',
+    title: 'HackGuard',
+    description: 'AI-powered hackathon integrity platform. Analyzes repos against time windows to flag suspicious activity.',
+    longDescription:
+      'Risk-scoring, not verdicts: an AI-powered hackathon integrity platform that analyzes submitted GitHub repos against declared hackathon time windows. It surfaces evidence (commit timestamps, massive code dumps) for judges to review. Built with a philosophy that it never accuses, but intelligently flags anomalies for human review.',
+    techStack: ['Python', 'AI'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/HackGuard-AI-powered-hackathon-integrity-platform',
+    category: 'ai-ml',
+    featured: true,
+  },
+  {
+    id: 'ipv-streamlit',
+    title: 'Image Processing & Vision Suite',
+    description: 'Interactive Streamlit web app showcasing diverse image enhancement algorithms, filters, and computer vision techniques.',
+    longDescription:
+      'Developed an Image Processing and Vision (IPV) project implementing diverse methods, algorithms, filters, and functions. Created an interactive web app using Python Streamlit to showcase and test these techniques in real-time, providing a practical platform for image enhancement and analysis.',
+    techStack: ['Python', 'Streamlit', 'OpenCV', 'Pillow'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/image-processing-vision-project',
+    category: 'ai-ml',
+    featured: false,
+  },
+  {
+    id: 'cgpa-calculator',
+    title: 'CGPA Calculator',
+    description: 'A human-centered Streamlit app for calculating CGPA with semester-level credit control and partial semester support.',
+    longDescription:
+      'A human-centered Streamlit web application designed for students to easily calculate and forecast their CGPA. Features include semester-level credit control, partial semester support, and quick visual insights into academic performance trends.',
+    techStack: ['Python', 'Streamlit'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/CGPA_Calculator',
+    category: 'web',
+    featured: false,
+  },
 ];
 
 export const skills: Skill[] = [
