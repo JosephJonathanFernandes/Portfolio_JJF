@@ -209,14 +209,14 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 'yt-blog-agent',
-    title: 'YouTube AI Blog Writer',
-    description: 'AI-powered autonomous agent system using CrewAI to research YouTube videos and generate comprehensive blog posts.',
+    id: 'smart-todo-cpp',
+    title: 'Smart C++ To-Do List',
+    description: 'A smart CLI to-do list built in C++ utilizing a Min Heap for priority-based task management.',
     longDescription:
-      'An AI-powered autonomous writing system that researches YouTube video transcripts and metadata, then synthesizes the content into comprehensive, well-structured blog posts using the CrewAI framework and Large Language Models.',
-    techStack: ['Python', 'CrewAI', 'LLMs', 'Agentic AI'],
-    githubUrl: 'https://github.com/JosephJonathanFernandes/youtube-blog-writer-agent',
-    category: 'ai-ml',
+      'A performance-focused command-line application built in C++. It utilizes advanced data structures like Min Heaps to manage task priorities efficiently. Features include priority-based sorting, due date tracking, and an interactive colored terminal output for an enhanced developer experience.',
+    techStack: ['C++', 'Data Structures', 'CLI'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/SmartToDoList-CPP',
+    category: 'systems',
     featured: false,
   },
 ];
