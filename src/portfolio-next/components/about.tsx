@@ -53,7 +53,7 @@ export default function About() {
                 and top 7 at HackIndia Spark 3 (80+ teams).
               </p>
               <p>
-                GATE qualified in both CSE and DA. 47 NPTEL courses completed at top recognition
+                GATE qualified in both CSE and DA (2025 and 2026). 47 NPTEL courses completed at top recognition
                 tiers: Domain Scholar, Star, Megastar, and Evangelist.
               </p>
             </div>
