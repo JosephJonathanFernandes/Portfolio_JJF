@@ -7,7 +7,7 @@ export interface Project {
   description: string;
   longDescription: string;
   techStack: string[];
-  githubUrl: string;
+  githubUrl?: string;
   demoUrl?: string;
   category: 'ai-ml' | 'web' | 'embedded' | 'security' | 'automation' | 'systems';
   featured: boolean;
@@ -187,15 +187,14 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 'smart-home-c',
-    title: 'Embedded C Smart Home Simulator',
-    description: 'Educational smart-home simulator written in C, featuring console-based control of peripherals like lights, fans, and sensors.',
+    id: 'adas-fusion',
+    title: 'Multi-Sensor Fusion ADAS',
+    description: 'Low-cost, predictive collision prevention and adaptive driver safety system built on Arduino Uno using multi-sensor fusion.',
     longDescription:
-      'A smart-home simulator developed in C to demonstrate embedded systems concepts in a console environment. It simulates hardware interactions including lights, fan control, password-protected door locks, and temperature sensor readings, showcasing fundamental C programming and hardware abstraction techniques.',
-    techStack: ['C', 'Embedded Systems', 'Simulation'],
-    githubUrl: 'https://github.com/JosephJonathanFernandes/Embedded-C-Smart-Home-project',
+      'Designed and implemented a low-cost, multi-sensor embedded safety system (ADAS) on an Arduino Uno. Fuses biometric driver-condition monitoring (MQ-3 alcohol sensor, dual IR sensors) with environmental sensing (HC-SR04 ultrasonic, SW-420 vibration, LDR). Features a custom cumulative weighted risk-scoring algorithm with predictive collision detection and non-blocking multi-actuator response.',
+    techStack: ['C++', 'Arduino', 'Sensor Fusion', 'Embedded Systems'],
     category: 'embedded',
-    featured: false,
+    featured: true,
   },
   {
     id: 'inventory-management-cpp',

@@ -102,15 +102,17 @@ export default function Projects() {
                 </div>
 
                 <div className="flex space-x-4">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 px-4 py-2 bg-gray-900 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors"
-                  >
-                    <Github className="w-4 h-4" />
-                    <span>Code</span>
-                  </a>
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 px-4 py-2 bg-gray-900 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors"
+                    >
+                      <Github className="w-4 h-4" />
+                      <span>Code</span>
+                    </a>
+                  )}
                   {project.demoUrl && (
                     <a
                       href={project.demoUrl}
@@ -185,15 +187,17 @@ export default function Projects() {
                   </div>
 
                   <div className="flex space-x-3">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 text-center px-3 py-2 bg-gray-900 dark:bg-gray-700 text-white text-sm rounded hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors"
-                    >
-                      <Github className="w-4 h-4 inline mr-1" />
-                      Code
-                    </a>
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center px-3 py-2 bg-gray-900 dark:bg-gray-700 text-white text-sm rounded hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors"
+                      >
+                        <Github className="w-4 h-4 inline mr-1" />
+                        Code
+                      </a>
+                    )}
                     {project.demoUrl && (
                       <a
                         href={project.demoUrl}
