@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -32,8 +32,7 @@ export default function Contact() {
     setStatus('submitting');
 
     try {
-      // Replace YOUR_FORM_ID with your Formspree form ID (free at formspree.io)
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/xvkpgpyv', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(formData),
