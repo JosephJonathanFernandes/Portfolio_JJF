@@ -10,24 +10,24 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://joseph-fernandes.vercel.app'),
-  title: "Joseph Fernandes | Embedded-first Software Engineer",
+  title: "Joseph Jonathan Fernandes | Embedded-first Software Engineer",
   description: "Final-year CE student at GEC Goa, AI/ML Honors, CGPA 9.778. Embedded systems intern at Visteon with accepted PPO. ISL recognition at 98.33% accuracy. 70+ public repos.",
-  keywords: ["Joseph Fernandes", "Software Engineer", "Embedded Systems", "AI/ML", "Full-Stack Developer", "Visteon", "NASA Space Apps", "GEC Goa"],
+  keywords: ["Joseph Jonathan Fernandes", "Software Engineer", "Embedded Systems", "AI/ML", "Full-Stack Developer", "Visteon", "NASA Space Apps", "GEC Goa"],
   authors: [{ name: "Joseph Jonathan Fernandes" }],
   creator: "Joseph Jonathan Fernandes",
   icons: {
     icon: '/favicon.svg',
   },
   openGraph: {
-    title: "Joseph Fernandes | Embedded-first Software Engineer",
+    title: "Joseph Jonathan Fernandes | Embedded-first Software Engineer",
     description: "From production AUTOSAR ECU modules to real-time ISL recognition. CE student, Visteon intern, 70+ public repos.",
     url: "https://joseph-fernandes.vercel.app",
-    siteName: "Joseph Fernandes Portfolio",
+    siteName: "Joseph Jonathan Fernandes Portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Joseph Fernandes | Embedded-first Software Engineer",
+    title: "Joseph Jonathan Fernandes | Embedded-first Software Engineer",
     description: "From production AUTOSAR ECU modules to real-time ISL recognition.",
   },
 };

@@ -24,7 +24,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link href="#home" className="text-xl font-bold text-gray-900 dark:text-white">
-              Joseph Fernandes
+              Joseph Jonathan Fernandes
             </Link>
           </div>
 
