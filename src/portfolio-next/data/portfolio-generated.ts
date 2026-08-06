@@ -257,5 +257,6 @@ export const achievements: string[] = [
   'Technix Quiz — co-organized state-level technical quiz (2023, 2025,2026)',
   'Quizzing & Debating — 9x 1st-place finishes at major intercollegiate events (NIT Goa, Goa University), state-level RBI Quiz finalist, and represented GEC at the Goa Vidhan Sabha',
   'CodeChef rating 1025 · HackerRank badges in C, Python, SQL, Java',
+  'Odoo Hackathon — National Finalist (NMIT Bangalore), selected from 200+ teams in the online qualifiers',
   'Open Source: 15+ merged pull requests to major repositories, including 14 PRs to public-apis (300k+ stars)',
 ];
