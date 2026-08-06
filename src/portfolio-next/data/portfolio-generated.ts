@@ -254,7 +254,7 @@ export const achievements: string[] = [
   'HackIndia Spark 3 2025 — Top 7 of 80+ teams (Goa)',
   'GATE qualified — CSE and DA (both 2025 and 2026)',
   'NPTEL — 47 courses at top recognition tiers: Domain Scholar (Programming & Data Science), Superstar, Megastar, Evangelist, Discipline and many more',
-  'Technix Quiz — co-organized state-level technical quiz (2023, 2025)',
+  'Technix Quiz — co-organized state-level technical quiz (2023, 2025,2026)',
   'CodeChef rating 1025 · HackerRank badges in C, Python, SQL, Java',
   'Open Source: 15+ merged pull requests to major repositories, including 14 PRs to public-apis (300k+ stars)',
 ];
