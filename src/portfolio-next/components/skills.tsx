@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Code2, Cpu, Database, Cloud, Wrench } from 'lucide-react';
+import { Code2, Cpu, Database, Wrench, Brain } from 'lucide-react';
 import { skills } from '@/data/portfolio';
 
 export default function Skills() {
@@ -19,6 +19,12 @@ export default function Skills() {
       color: 'from-purple-500 to-pink-500'
     },
     {
+      id: 'ml',
+      title: 'ML & AI Libraries',
+      icon: Brain,
+      color: 'from-pink-500 to-rose-500'
+    },
+    {
       id: 'databases',
       title: 'Databases',
       icon: Database,
@@ -26,15 +32,9 @@ export default function Skills() {
     },
     {
       id: 'tools',
-      title: 'Tools & Technologies',
+      title: 'Tools & Concepts',
       icon: Wrench,
       color: 'from-orange-500 to-red-500'
-    },
-    {
-      id: 'cloud',
-      title: 'Cloud & DevOps',
-      icon: Cloud,
-      color: 'from-indigo-500 to-purple-500'
     }
   ];
 
@@ -66,12 +66,9 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Skills & Technologies
+            Skills
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            A comprehensive overview of my technical expertise across different domains
-          </p>
+          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -121,47 +118,6 @@ export default function Skills() {
           })}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-8 text-white max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold mb-4">Continuous Learning</h3>
-            <p className="text-blue-100 mb-6">
-              I'm constantly expanding my skill set and staying updated with the latest technologies.
-              Currently focusing on advanced AI/ML techniques, cloud architecture, and emerging web technologies.
-            </p>
-            <div className="grid md:grid-cols-3 gap-4 text-sm">
-              <div className="bg-white/10 rounded-lg p-4">
-                <h4 className="font-semibold mb-2">Currently Learning</h4>
-                <ul className="text-left space-y-1">
-                  <li>• Java </li>
-                  <li>• Systems Design </li>
-                  <li>• Machine Learning and Deep Learning</li>
-                </ul>
-              </div>
-              <div className="bg-white/10 rounded-lg p-4">
-                <h4 className="font-semibold mb-2">Areas of Interest</h4>
-                <ul className="text-left space-y-1">
-                  <li>• IOT </li>
-                  <li>• Image Processing and Computer Vision</li>
-                  <li>• AI/ML and Deep Learning </li>
-                </ul>
-              </div>
-              <div className="bg-white/10 rounded-lg p-4">
-                <h4 className="font-semibold mb-2">Certifications</h4>
-                <ul className="text-left space-y-1">
-                  <li>• MISRA-C Certified</li>
-                  <li>• AUTOSAR Trained</li>
-                  <li>• NPTEL Courses</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

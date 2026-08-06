@@ -1,15 +1,15 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Code, Cpu, Award, BookOpen } from 'lucide-react';
-import { personalInfo, additionalAchievements } from '@/data/portfolio';
+import { Code, Award, BookOpen, GraduationCap } from 'lucide-react';
+import { personalInfo, achievements } from '@/data/portfolio';
 
 export default function About() {
   const stats = [
-    { icon: Code, label: 'Years Coding', value: '4+' },
-    { icon: Cpu, label: 'Projects Built', value: '10+' },
-    { icon: Award, label: 'Hackathons Won', value: '1' },
-    { icon: BookOpen, label: 'CGPA', value: personalInfo.education.cgpa }
+    { icon: Code, label: 'Public GitHub Repos', value: '70+' },
+    { icon: Award, label: 'GATE Qualified', value: 'CSE + DA' },
+    { icon: BookOpen, label: 'NPTEL Courses', value: '47' },
+    { icon: GraduationCap, label: 'CGPA', value: personalInfo.education.cgpa }
   ];
 
   return (
@@ -23,7 +23,7 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            About Me
+            About
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
         </motion.div>
@@ -36,23 +36,25 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-              Passionate Software Engineer
+              From production ECU code to real-time sign language recognition.
             </h3>
             <div className="space-y-4 text-gray-600 dark:text-gray-300">
               <p>
-                I am a final-year Computer Engineering student specializing in AI/ML with a strong foundation
-                in embedded systems and full-stack development. My journey spans from low-level C/C++ programming
-                for automotive systems to modern web applications and machine learning solutions.
+              Final-year Computer Engineering student at GEC Goa with an AI/ML Honors specialization.
+                Completed an embedded systems internship at Visteon Technical & Services Centre in 2025,
+                working on production ECU modules with a 7-person team.
+                A Pre-Placement Offer has been accepted.
               </p>
               <p>
-                During my internship at Visteon Corporation, I contributed to production automotive embedded systems,
-                achieving 100% test coverage for AUTOSAR modules and implementing MISRA-C compliance standards.
-                This experience solidified my understanding of quality assurance and embedded systems development.
+              Projects span embedded C through applied AI. The ISL recognition system (final year
+                project) achieves 98.33% accuracy across 300 sign classes at 60+ FPS CPU inference.
+                CmdBridge maps natural-language intent to native OS APIs in C with 94% test coverage.
+                Three top finishes in 2025: 1st at HackAura (national), 1st at Infofest (Goa University),
+                and top 7 at HackIndia Spark 3 (80+ teams).
               </p>
               <p>
-                Beyond traditional software engineering, I have won one hackathon and multiple competitive coding competitions. My work
-                combines technical expertise with creative problem-solving across domains like space exploration,
-                environmental sustainability, and network security.
+                GATE qualified in both CSE and DA. 47 NPTEL courses completed at top recognition
+                tiers: Domain Scholar, Star, Megastar, and Evangelist.
               </p>
             </div>
           </motion.div>
@@ -64,7 +66,7 @@ export default function About() {
             viewport={{ once: true }}
             className="grid grid-cols-2 gap-6"
           >
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <div
                 key={stat.label}
                 className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 p-6 rounded-xl text-center hover:shadow-lg transition-shadow duration-300"
@@ -89,10 +91,10 @@ export default function About() {
           className="mt-16"
         >
           <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center">
-            Key Achievements
+            Achievements
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {additionalAchievements.map((achievement) => (
+            {achievements.map((achievement) => (
               <motion.div
                 key={achievement}
                 initial={{ opacity: 0, y: 20 }}
@@ -126,11 +128,11 @@ export default function About() {
             <h4 className="text-xl font-semibold mb-2">
               {personalInfo.education.degree}
             </h4>
-            <p className="text-blue-100 mb-4">
-              {personalInfo.education.status} • CGPA: {personalInfo.education.cgpa}
+            <p className="text-blue-100 mb-2">
+              {personalInfo.education.institution}
             </p>
-            <p className="text-sm text-blue-100">
-              Specializing in Artificial Intelligence and Machine Learning
+            <p className="text-blue-100">
+              {personalInfo.education.status} · CGPA: {personalInfo.education.cgpa}
             </p>
           </div>
         </motion.div>

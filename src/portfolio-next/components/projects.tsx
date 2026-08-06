@@ -66,16 +66,21 @@ export default function Projects() {
                         <Star className="w-5 h-5 text-yellow-500" />
                       )}
                     </div>
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="flex flex-wrap gap-2 mb-3">
                       <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(project.category)}`}>
                         {project.category.toUpperCase().replace('-', '/')}
                       </span>
                       {project.achievement && (
                         <span className="px-3 py-1 rounded-full text-xs font-semibold bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300">
-                          🏆 {project.achievement}
+                          {project.achievement}
                         </span>
                       )}
                     </div>
+                    {(project.role || project.teamSize) && (
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                        {project.role}{project.teamSize ? ` · Team of ${project.teamSize}` : ''}
+                      </p>
+                    )}
                   </div>
                 </div>
 
@@ -220,20 +225,20 @@ export default function Projects() {
             <h3 className="text-2xl font-semibold mb-4">GitHub Activity</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div>
-                <div className="text-3xl font-bold text-blue-400">400+</div>
-                <div className="text-gray-300">Commits</div>
+                <div className="text-3xl font-bold text-blue-400">70+</div>
+                <div className="text-gray-300">Public Repos</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-green-400">10+</div>
-                <div className="text-gray-300">Projects</div>
+                <div className="text-3xl font-bold text-green-400">7+</div>
+                <div className="text-gray-300">Hackathon Projects</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-400">9.778</div>
-                <div className="text-gray-300">CGPA</div>
+                <div className="text-3xl font-bold text-purple-400">3</div>
+                <div className="text-gray-300">2025 Top Finishes</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-yellow-400">3+</div>
-                <div className="text-gray-300">Hackathons Won</div>
+                <div className="text-3xl font-bold text-yellow-400">47</div>
+                <div className="text-gray-300">NPTEL Courses</div>
               </div>
             </div>
             <div className="mt-6">

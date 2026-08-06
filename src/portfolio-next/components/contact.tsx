@@ -1,8 +1,8 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Github, Linkedin, ExternalLink, Send, CheckCircle } from 'lucide-react';
+import { Mail, MapPin, Github, Linkedin, ExternalLink, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import { personalInfo } from '@/data/portfolio';
 
 interface FormData {
@@ -12,6 +12,8 @@ interface FormData {
   message: string;
 }
 
+type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
+
 export default function Contact() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -19,29 +21,36 @@ export default function Contact() {
     subject: '',
     message: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [status, setStatus] = useState<FormStatus>('idle');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    setStatus('submitting');
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    try {
+      // Replace YOUR_FORM_ID with your Formspree form ID (free at formspree.io)
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-
-    // Reset success message after 5 seconds
-    setTimeout(() => setIsSubmitted(false), 5000);
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setStatus('idle'), 6000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 5000);
+      }
+    } catch {
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 5000);
+    }
   };
 
   const contactMethods = [
@@ -50,7 +59,7 @@ export default function Contact() {
       label: 'Email',
       value: personalInfo.email,
       href: `mailto:${personalInfo.email}`,
-      color: 'hover:bg-red-50 hover:text-red-600 dark:hover:bg-red-900 dark:hover:text-red-400'
+      color: 'hover:bg-red-50 hover:text-red-600 dark:hover:bg-red-900/30 dark:hover:text-red-400'
     },
     {
       icon: Github,
@@ -62,16 +71,16 @@ export default function Contact() {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'Joseph Jonathan Fernandes',
+      value: 'joseph-jonathan-fernandes',
       href: personalInfo.linkedin,
-      color: 'hover:bg-blue-50 hover:text-blue-600 dark:hover:bg-blue-900 dark:hover:text-blue-400'
+      color: 'hover:bg-blue-50 hover:text-blue-600 dark:hover:bg-blue-900/30 dark:hover:text-blue-400'
     },
     {
       icon: ExternalLink,
       label: 'GitRoll',
-      value: 'u4C3j8q7Z5Dfo3CM3DGcEeo9A8Fn2',
+      value: 'View Profile',
       href: personalInfo.gitroll,
-      color: 'hover:bg-green-50 hover:text-green-600 dark:hover:bg-green-900 dark:hover:text-green-400'
+      color: 'hover:bg-green-50 hover:text-green-600 dark:hover:bg-green-900/30 dark:hover:text-green-400'
     }
   ];
 
@@ -86,12 +95,11 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Get In Touch
+            Contact
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
-            Feel free to reach out!
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            Open to full-time SDE, embedded systems, and AI/ML roles. Direct email is fastest.
           </p>
         </motion.div>
 
@@ -104,7 +112,7 @@ export default function Contact() {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-              Let's Connect
+              Get in touch
             </h3>
 
             <div className="space-y-6 mb-8">
@@ -113,26 +121,8 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-                    Location
-                  </h4>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    {personalInfo.location}
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-green-600 dark:text-green-400" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-                    Response Time
-                  </h4>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    I typically respond within 24 hours
-                  </p>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">Location</h4>
+                  <p className="text-gray-600 dark:text-gray-300">{personalInfo.location}</p>
                 </div>
               </div>
             </div>
@@ -142,7 +132,7 @@ export default function Contact() {
                 <motion.a
                   key={method.label}
                   href={method.href}
-                  target="_blank"
+                  target={method.label !== 'Email' ? '_blank' : undefined}
                   rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -153,12 +143,8 @@ export default function Contact() {
                   <div className="flex items-center space-x-3">
                     <method.icon className="w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:scale-110 transition-transform" />
                     <div>
-                      <div className="font-medium text-gray-900 dark:text-white text-sm">
-                        {method.label}
-                      </div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400 truncate">
-                        {method.value}
-                      </div>
+                      <div className="font-medium text-gray-900 dark:text-white text-sm">{method.label}</div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400 truncate">{method.value}</div>
                     </div>
                   </div>
                 </motion.a>
@@ -173,25 +159,20 @@ export default function Contact() {
               className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-lg"
             >
               <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                Currently Available For
+                Available for
               </h4>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="w-4 h-4 text-green-500" />
-                  <span>Full-time Software Engineering roles</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="w-4 h-4 text-green-500" />
-                  <span>Embedded Systems positions</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="w-4 h-4 text-green-500" />
-                  <span>AI/ML Engineering opportunities</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <CheckCircle className="w-4 h-4 text-green-500" />
-                  <span>Backend/Full-stack development</span>
-                </li>
+                {[
+                  'Full-time SDE roles',
+                  'Embedded systems positions',
+                  'AI/ML engineering roles',
+                  'Backend/full-stack development',
+                ].map((item) => (
+                  <li key={item} className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </motion.div>
           </motion.div>
@@ -205,22 +186,33 @@ export default function Contact() {
           >
             <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-                Send a Message
+                Send a message
               </h3>
 
-              {isSubmitted && (
+              {status === 'success' && (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  className="mb-6 p-4 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-300 rounded-lg flex items-center space-x-3"
+                  className="mb-6 p-4 bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-300 rounded-lg flex items-center space-x-3"
                 >
-                  <CheckCircle className="w-5 h-5" />
-                  <span>Thank you! Your message has been sent successfully.</span>
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                  <span>Message sent. I will get back to you within 24 hours.</span>
+                </motion.div>
+              )}
+
+              {status === 'error' && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="mb-6 p-4 bg-red-100 dark:bg-red-900/40 text-red-800 dark:text-red-300 rounded-lg flex items-center space-x-3"
+                >
+                  <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                  <span>Something went wrong. Email me directly at {personalInfo.email}</span>
                 </motion.div>
               )}
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       Name *
@@ -265,7 +257,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
-                    placeholder="What's this about?"
+                    placeholder="Opportunity / Collaboration / Other"
                   />
                 </div>
 
@@ -281,16 +273,16 @@ export default function Contact() {
                     required
                     rows={6}
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors resize-none"
-                    placeholder="Tell me about your project or opportunity..."
+                    placeholder="Tell me about the role or project..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  disabled={isSubmitting}
+                  disabled={status === 'submitting'}
                   className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center space-x-2"
                 >
-                  {isSubmitting ? (
+                  {status === 'submitting' ? (
                     <>
                       <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                       <span>Sending...</span>
@@ -306,22 +298,6 @@ export default function Contact() {
             </div>
           </motion.div>
         </div>
-
-        {/* Footer Quote */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
-          <blockquote className="text-xl text-gray-600 dark:text-gray-300 italic">
-            "Building reliable software, one project at a time."
-          </blockquote>
-          <cite className="text-gray-500 dark:text-gray-400 mt-4 block">
-            - Joseph Jonathan Fernandes
-          </cite>
-        </motion.div>
       </div>
     </section>
   );
