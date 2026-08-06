@@ -187,14 +187,14 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 'otp-encryption',
-    title: 'Secure OTP File Encryption',
-    description: 'Production-style CLI tool in C implementing true OTP encryption using XOR and cryptographically secure keys via Windows BCryptGenRandom.',
+    id: 'smart-home-c',
+    title: 'Embedded C Smart Home Simulator',
+    description: 'Educational smart-home simulator written in C, featuring console-based control of peripherals like lights, fans, and sensors.',
     longDescription:
-      'A production-style CLI tool implementing true One-Time Pad (OTP) encryption using XOR and cryptographically secure keys via Windows BCryptGenRandom. Features large file streaming, secure key management, separate encrypt/decrypt workflows, and a modular, secure C architecture.',
-    techStack: ['C', 'Windows API', 'Cryptography'],
-    githubUrl: 'https://github.com/JosephJonathanFernandes/Secure-One-Time-Pad-OTP-File-Encryption-System-for-Windows',
-    category: 'security',
+      'A smart-home simulator developed in C to demonstrate embedded systems concepts in a console environment. It simulates hardware interactions including lights, fan control, password-protected door locks, and temperature sensor readings, showcasing fundamental C programming and hardware abstraction techniques.',
+    techStack: ['C', 'Embedded Systems', 'Simulation'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/Embedded-C-Smart-Home-project',
+    category: 'embedded',
     featured: false,
   },
   {
