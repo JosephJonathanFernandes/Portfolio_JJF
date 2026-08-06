@@ -233,7 +233,7 @@ export const experience: Experience[] = [
     company: 'Visteon Technical & Services Centre Pvt. Ltd.',
     role: 'Software Engineering Intern — Embedded Systems',
     duration: 'July 2025 – September 2025',
-    location: 'Pune, India',
+    location: 'Panjim, Goa, India',
     description:
       'Joined a 7-person embedded team working on production ECU modules for automotive systems. Work focused on AUTOSAR compliance, static analysis, and test coverage across production-grade C/C++ code.',
     achievements: [
