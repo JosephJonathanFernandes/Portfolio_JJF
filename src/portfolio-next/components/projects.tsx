@@ -228,7 +228,7 @@ export default function Projects() {
                 <div className="text-gray-300">Public Repos</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-green-400">7+</div>
+                <div className="text-3xl font-bold text-green-400">4</div>
                 <div className="text-gray-300">Hackathon Projects</div>
               </div>
               <div>

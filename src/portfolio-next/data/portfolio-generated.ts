@@ -40,13 +40,13 @@ export const projects: Project[] = [
     title: 'Vāksetu',
     description: 'Real-time ISL recognition — 98.33% accuracy, 60+ FPS, 93K+ gesture sequences across 300 sign classes. Final year project.',
     longDescription:
-      'Vāksetu is a real-time Indian Sign Language recognition system. Its core Sign-to-Text component uses MediaPipe skeletal landmarks with a hybrid BiGRU + Spatial Graph Neural Network, trained on 93,000+ gesture sequences across 300 classes — 98.33% accuracy, 97.84% macro F1. The model was compressed from 4.2 MB to 1.05 MB via INT8 ONNX quantization for 60+ FPS CPU inference at ~6.22ms/frame, with the training pipeline migrated to HDF5 for 391× faster data loading.\n\nAdditional subsystems & demos:\n• Semester 8 Demo: https://vaksetu.akstack.com/home\n• Semester 7 Demo: https://vak-setu.vercel.app/translate\n• Core Platform: https://github.com/ahmedkhan0302/vaksetu\n• CTC Prototype: https://github.com/ZONEboyff/vaksetu-ctc-is\n• Speech-to-Sign: https://github.com/AkaashSamson/Vak-Setu\n• Quiz Module: https://github.com/JosephJonathanFernandes/Quiz_module',
+      'Vāksetu is a real-time Indian Sign Language recognition system. Its core Sign-to-Text component uses MediaPipe skeletal landmarks with a hybrid BiGRU + Spatial Graph Neural Network, trained on 93,000+ gesture sequences across 300 classes — 98.33% accuracy, 97.84% macro F1. The model was compressed from 4.2 MB to 1.05 MB via INT8 ONNX quantization for 60+ FPS CPU inference at ~6.22ms/frame, with the training pipeline migrated to HDF5 for 391× faster data loading.',
     techStack: ['Python', 'PyTorch', 'MediaPipe', 'ONNX Runtime', 'FastAPI', 'WebSockets', 'HDF5'],
     githubUrl: 'https://github.com/JosephJonathanFernandes/sign_to_text_module',
     demoUrl: 'https://vaksetu.akstack.com/home',
     category: 'ai-ml',
     featured: true,
-    role: 'Lead Developer',
+    role: 'Core Contributor',
   },
   {
     id: 'cmdbridge',

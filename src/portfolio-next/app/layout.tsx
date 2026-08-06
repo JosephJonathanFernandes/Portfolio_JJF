@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://joseph-fernandes.vercel.app'),
+  metadataBase: new URL('https://jjf-eight.vercel.app'),
   title: "Joseph Jonathan Fernandes | Embedded-first Software Engineer",
-  description: "Final-year CE student at GEC Goa, AI/ML Honors, CGPA 9.778. Embedded systems intern at Visteon with accepted PPO. ISL recognition at 98.33% accuracy. 70+ public repos.",
+  description: "Final-year CE student, AI/ML Honors. Embedded systems intern at Visteon with PPO. Built ISL recognition (98.3% acc) & CmdBridge. 70+ public repos.",
   keywords: ["Joseph Jonathan Fernandes", "Software Engineer", "Embedded Systems", "AI/ML", "Full-Stack Developer", "Visteon", "NASA Space Apps", "GEC Goa"],
   authors: [{ name: "Joseph Jonathan Fernandes" }],
   creator: "Joseph Jonathan Fernandes",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Joseph Jonathan Fernandes | Embedded-first Software Engineer",
     description: "From production AUTOSAR ECU modules to real-time ISL recognition. CE student, Visteon intern, 70+ public repos.",
-    url: "https://joseph-fernandes.vercel.app",
+    url: "https://jjf-eight.vercel.app",
     siteName: "Joseph Jonathan Fernandes Portfolio",
     type: "website",
   },

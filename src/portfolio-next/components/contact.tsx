@@ -98,7 +98,7 @@ export default function Contact() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Open to full-time SDE, embedded systems, and AI/ML roles. Direct email is fastest.
+            Joining Visteon as an SDE post-graduation, but always open to discussing open source, research, or interesting tech. Direct email is fastest.
           </p>
         </motion.div>
 
