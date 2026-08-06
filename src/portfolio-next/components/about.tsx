@@ -54,7 +54,7 @@ export default function About() {
               </p>
               <p>
                 GATE qualified in both CSE and DA (2025 and 2026). 47 NPTEL courses completed at top recognition
-                tiers: Domain Scholar, Star, Megastar, and Evangelist.
+                tiers: Domain Scholar (Programming & Data Science), Superstar, Megastar, Evangelist, Discipline and many more.
               </p>
             </div>
           </motion.div>
