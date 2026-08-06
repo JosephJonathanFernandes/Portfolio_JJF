@@ -186,6 +186,28 @@ export const projects: Project[] = [
     category: 'web',
     featured: false,
   },
+  {
+    id: 'otp-encryption',
+    title: 'Secure OTP File Encryption',
+    description: 'Production-style CLI tool in C implementing true OTP encryption using XOR and cryptographically secure keys via Windows BCryptGenRandom.',
+    longDescription:
+      'A production-style CLI tool implementing true One-Time Pad (OTP) encryption using XOR and cryptographically secure keys via Windows BCryptGenRandom. Features large file streaming, secure key management, separate encrypt/decrypt workflows, and a modular, secure C architecture.',
+    techStack: ['C', 'Windows API', 'Cryptography'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/Secure-One-Time-Pad-OTP-File-Encryption-System-for-Windows',
+    category: 'security',
+    featured: false,
+  },
+  {
+    id: 'inventory-management-cpp',
+    title: 'C++ Inventory Management',
+    description: 'Modular C++ inventory system with file-based persistence, demonstrating OOP best practices, memory safety, and clean architecture.',
+    longDescription:
+      'A professional, modular C++ inventory management system with file-based persistence built as an OOPS course project. It demonstrates best practices in C++ development, emphasizing proper code organization, memory safety, and clean architecture.',
+    techStack: ['C++', 'OOP', 'File Handling'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/inventory-management-cpp',
+    category: 'systems',
+    featured: false,
+  },
 ];
 
 export const skills: Skill[] = [
