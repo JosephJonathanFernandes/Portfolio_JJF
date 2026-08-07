@@ -67,6 +67,22 @@
   100% { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes aurora {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(40px, -30px) scale(1.08) rotate(3deg); }
+  66% { transform: translate(-25px, 15px) scale(0.96) rotate(-2deg); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @layer utilities {
   .bg-grid-white {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.035)'%3E%3Cpath d='M0 .5H31.5V32'/%3E%3C/svg%3E");
@@ -111,6 +127,24 @@
     font-weight: 700;
     letter-spacing: -0.03em;
   }
+
+  .skill-bar {
+    background: linear-gradient(90deg, rgba(255,255,255,0.6), rgba(165,180,252,0.4));
+    border-radius: 9999px;
+    height: 2px;
+  }
+
+  .aurora-blob {
+    animation: aurora 10s ease-in-out infinite;
+  }
+
+  .aurora-blob-2 {
+    animation: aurora 14s ease-in-out infinite reverse;
+  }
+
+  .marquee {
+    animation: marquee 28s linear infinite;
+  }
 }
 
 @layer base {
@@ -126,6 +160,25 @@
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
     font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  }
+
+  /* Noise grain texture for visual depth */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9990;
+    opacity: 0.028;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 256px 256px;
+  }
+
+  /* Hide default cursor on desktop — replaced by custom cursor component */
+  @media (min-width: 1024px) {
+    *, *::before, *::after {
+      cursor: none !important;
+    }
   }
 
   ::-webkit-scrollbar {
