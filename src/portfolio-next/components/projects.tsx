@@ -197,7 +197,7 @@ export default function Projects() {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-600 mb-4">On GitHub</p>
               <h3 className="section-heading text-3xl text-white mb-12">GitHub Activity</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-                {[['70+','Public Repos'],['4','Hackathon Projects'],['3','2025 Top Finishes'],['47','NPTEL Courses']].map(([v,l]) => (
+                {[['70+','Public Repos'],['4','Hackathon Projects'],['1','Hackathon Win'],['47','NPTEL Courses']].map(([v,l]) => (
                   <div key={l}>
                     <div className="text-4xl font-extrabold text-white mb-2 font-display tracking-tight">{v}</div>
                     <div className="text-xs font-semibold uppercase tracking-widest text-zinc-600">{l}</div>

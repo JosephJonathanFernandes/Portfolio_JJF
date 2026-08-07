@@ -47,7 +47,7 @@ export default function Hero() {
   }, []);
 
   const stats = [
-    { icon: Trophy,    label: 'Hackathon Wins', value: '3'    },
+    { icon: Trophy,    label: 'Hackathon Win',  value: '1'    },
     { icon: GitBranch, label: 'Public Repos',   value: '70+'  },
     { icon: BookOpen,  label: 'NPTEL Courses',  value: '47'   },
     { icon: Cpu,       label: 'GATE Qualified', value: 'CSE+DA'},
@@ -87,7 +87,7 @@ export default function Hero() {
         <motion.div initial={{ opacity: 0, y: -12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="mb-10">
           <span className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-zinc-300 tracking-wide font-medium backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-emerald-400 glow-dot" />
-            Open to SDE opportunities · Joining Visteon post-grad
+            Software Engineer @ Visteon
           </span>
         </motion.div>
 
