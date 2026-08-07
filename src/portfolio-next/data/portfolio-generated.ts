@@ -221,6 +221,17 @@ export const projects: Project[] = [
     category: 'systems',
     featured: false,
   },
+  {
+    id: 'langchain-book-recommender',
+    title: 'AI Book Recommender',
+    description: 'A modular book recommendation system designed with Clean Code, SOLID principles, and LangChain.',
+    longDescription:
+      'A modular book recommendation system built with professional engineering standards including Clean Code, SOLID principles, and GitGuardian security. Leverages LangChain for intelligent semantic retrieval and context-aware recommendations.',
+    techStack: ['Python', 'LangChain', 'LLMs', 'Clean Code'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/Book_Recommender_Using_Langchain',
+    category: 'ai-ml',
+    featured: false,
+  },
 ];
 
 export const skills: Skill[] = [
