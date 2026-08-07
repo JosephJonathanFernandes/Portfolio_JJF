@@ -47,65 +47,51 @@ export default function Hero() {
   }, [handleMouseMove]);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Dynamic Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-        <div
-          className="absolute w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-3xl animate-pulse"
-          style={{
-            left: `${mousePosition.x * 0.02}%`,
-            top: `${mousePosition.y * 0.02}%`,
-            transform: 'translate(-50%, -50%)',
-          }}
-        />
-        <div
-          className="absolute w-80 h-80 bg-gradient-to-r from-purple-400/15 to-pink-400/15 rounded-full blur-3xl animate-pulse"
-          style={{
-            right: `${mousePosition.x * 0.015}%`,
-            bottom: `${mousePosition.y * 0.015}%`,
-            transform: 'translate(50%, 50%)',
-            animationDelay: '1s',
-          }}
-        />
-      </div>
-
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      
       {/* Floating particles */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {particlePositions.map((particle, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-blue-400/30 rounded-full"
+            className="absolute w-1 h-1 bg-white/20 rounded-full"
             style={{ left: `${particle.left}%`, top: `${particle.top}%` }}
-            animate={{ y: [-20, 20, -20], x: [-10, 10, -10], scale: [0.5, 1, 0.5] }}
+            animate={{ y: [-20, 20, -20], x: [-10, 10, -10], scale: [0.5, 1, 0.5], opacity: [0.2, 0.5, 0.2] }}
             transition={{ duration: particle.duration, repeat: Infinity, delay: particle.delay }}
           />
         ))}
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center flex flex-col items-center">
+          
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="mb-8"
           >
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-              <motion.span
-                className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
-                whileHover={{ scale: 1.03 }}
-                transition={{ type: 'spring', stiffness: 300 }}
-              >
-                {personalInfo.name}
-              </motion.span>
+            <span className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-zinc-300 tracking-wide font-medium">
+              CE Student @ GEC Goa
+            </span>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+          >
+            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold text-white mb-6 tracking-tight">
+              {personalInfo.name}
             </h1>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-4 font-light">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl text-zinc-400 mb-6 font-medium tracking-tight">
               {personalInfo.title}
             </h2>
           </motion.div>
@@ -113,9 +99,9 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           >
-            <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-zinc-500 mb-10 max-w-2xl mx-auto leading-relaxed">
               {personalInfo.tagline}
             </p>
           </motion.div>
@@ -124,85 +110,49 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
           >
-            <motion.button
+            <button
               onClick={() => scrollToSection('projects')}
-              className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl overflow-hidden shadow-2xl"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ type: 'spring', stiffness: 300 }}
+              className="px-8 py-3.5 bg-white text-black font-semibold rounded-full hover:bg-zinc-200 transition-colors shadow-[0_0_40px_rgba(255,255,255,0.1)]"
             >
-              <span className="relative z-10">View My Work</span>
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600"
-                initial={{ x: '-100%' }}
-                whileHover={{ x: 0 }}
-                transition={{ duration: 0.3 }}
-              />
-            </motion.button>
+              View My Work
+            </button>
 
-            <motion.a
+            <a
               href="/joseph_jonathan_fernandes_resume.pdf"
               download
-              className="px-8 py-4 bg-gray-900 dark:bg-gray-700 text-white font-semibold rounded-xl shadow-xl flex items-center gap-3"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ type: 'spring', stiffness: 300 }}
+              className="px-8 py-3.5 bg-white/5 text-white font-medium rounded-full border border-white/10 hover:bg-white/10 transition-colors flex items-center gap-2"
             >
               <span>Download Resume</span>
-              <motion.div
-                className="w-2 h-2 bg-green-400 rounded-full"
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 1, repeat: Infinity }}
-              />
-            </motion.a>
-
-            <motion.button
-              onClick={() => scrollToSection('contact')}
-              className="px-6 py-4 text-gray-500 dark:text-gray-400 font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 underline underline-offset-4 decoration-transparent hover:decoration-blue-600 dark:hover:decoration-blue-400"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Get In Touch
-            </motion.button>
+              <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_10px_rgba(52,211,153,0.5)]" />
+            </a>
           </motion.div>
 
           {/* Social Links */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.9 }}
-            className="flex justify-center space-x-4 mb-12"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex justify-center space-x-6 mb-16"
           >
             {[
-              { icon: Github, href: personalInfo.github, label: 'GitHub', color: 'hover:shadow-blue-500/25' },
-              { icon: Linkedin, href: personalInfo.linkedin, label: 'LinkedIn', color: 'hover:shadow-blue-700/25' },
-              { icon: Mail, href: `mailto:${personalInfo.email}`, label: 'Email', color: 'hover:shadow-red-500/25' },
-              { icon: ExternalLink, href: personalInfo.gitroll, label: 'GitRoll', color: 'hover:shadow-green-500/25' },
-            ].map(({ icon: Icon, href, label, color }, index) => (
-              <motion.a
+              { icon: Github, href: personalInfo.github, label: 'GitHub' },
+              { icon: Linkedin, href: personalInfo.linkedin, label: 'LinkedIn' },
+              { icon: Mail, href: `mailto:${personalInfo.email}`, label: 'Email' },
+              { icon: ExternalLink, href: personalInfo.gitroll, label: 'GitRoll' },
+            ].map(({ icon: Icon, href, label }) => (
+              <a
                 key={label}
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className={`group relative p-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl ${color} transition-all duration-300 border border-gray-200 dark:border-gray-700`}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 1.1 + index * 0.1 }}
-                whileHover={{ y: -5, scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
+                className="text-zinc-500 hover:text-white transition-colors duration-300"
               >
-                <Icon className="w-6 h-6 text-gray-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                />
-              </motion.a>
+                <Icon className="w-6 h-6" />
+              </a>
             ))}
           </motion.div>
 
@@ -210,31 +160,27 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.3 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
             className="flex justify-center"
           >
-            <motion.button
+            <button
               onClick={() => scrollToSection('about')}
               aria-label="Scroll to About"
-              className="group relative p-4 rounded-full bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-white/80 dark:hover:bg-gray-700/80 transition-all duration-300"
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
+              className="text-zinc-600 hover:text-white transition-colors duration-300"
             >
-              <ChevronDown className="w-6 h-6 text-gray-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400" />
               <motion.div
-                className="absolute inset-0 rounded-full border-2 border-blue-500/30"
-                animate={{ scale: [1, 1.3, 1], opacity: [0.3, 0, 0.3] }}
+                animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-              />
-            </motion.button>
+              >
+                <ChevronDown className="w-6 h-6" />
+              </motion.div>
+            </button>
           </motion.div>
         </div>
       </div>
 
       {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white dark:from-gray-900 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent pointer-events-none" />
     </section>
   );
 }
