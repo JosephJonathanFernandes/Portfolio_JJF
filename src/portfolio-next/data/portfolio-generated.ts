@@ -90,9 +90,9 @@ export const projects: Project[] = [
   {
     id: 'crowdsense',
     title: 'CrowdSense',
-    description: 'Real-time disaster detection via social media NLP. Most-starred original repo.',
+    description: 'Real-time disaster detection pipeline using NLP and anomaly detection on live social media streams.',
     longDescription:
-      'Disaster response teams need real-time situational awareness from social media during crises. CrowdSense applies NLP and anomaly detection — Z-score and EWMA algorithms — to live social streams, extracts locations via Named Entity Recognition, maps incidents with Leaflet, and dispatches SMS alerts via Twilio. Backend-focused in a team of 4.',
+      'Engineered a real-time disaster detection pipeline that processes live social media streams to provide situational awareness for first responders. Implemented NLP (spaCy) for Named Entity Recognition and anomaly detection algorithms (Z-score, EWMA) to flag crises. Automates location extraction (Leaflet mapping) and SMS dispatch (Twilio). Backend-focused contributor in a team of 4.',
     techStack: ['Python', 'Flask', 'spaCy', 'Twilio', 'SQLite', 'Leaflet', 'NLP'],
     githubUrl: 'https://github.com/JosephJonathanFernandes/CrowdSense',
     category: 'ai-ml',
@@ -103,9 +103,9 @@ export const projects: Project[] = [
   {
     id: 'exoscope',
     title: 'Exoscope',
-    description: 'NASA Space Apps Challenge (state-level) — AI exoplanet analysis with RAG chatbot.',
+    description: 'AI exoplanet analysis platform featuring a RAG-powered natural language interface for astronomical data.',
     longDescription:
-      'State-level entry for NASA Space Apps Challenge. An AI platform for exoplanet detection with a Retrieval-Augmented Generation (RAG) chatbot for natural-language interaction with astronomical data. Responsible for backend architecture and RAG integration in a team of 4.',
+      'Architected the backend and Retrieval-Augmented Generation (RAG) pipeline for an AI exoplanet detection platform. Integrated Groq LLMs and FastAPI to enable natural-language querying of complex astronomical data. State-level entry for the NASA Space Apps Challenge, developed in a team of 4.',
     techStack: ['React', 'TypeScript', 'FastAPI', 'Groq API', 'RAG', 'Machine Learning'],
     githubUrl: 'https://github.com/JosephJonathanFernandes/Nasa-Space-Hackathon-WizCoders-frontend',
     demoUrl: 'https://nasaexoscope.vercel.app/',
@@ -118,9 +118,9 @@ export const projects: Project[] = [
   {
     id: 'hackindia-spark-3',
     title: 'TaskExpert',
-    description: 'Knowledge graph task scheduler with MeTTa-based reasoning. HackIndia Spark 3 2025 — top 7 of 80+ teams.',
+    description: 'Knowledge graph-based task scheduler utilizing symbolic AI for automatic dependency resolution.',
     longDescription:
-      'Built for HackIndia Spark 3 2025, finishing top 7 of 80+ teams in the Goa region. Uses knowledge graphs and MeTTa-based reasoning (Hyperon, AtomSpace) for intelligent task scheduling with automatic dependency resolution. MeTTa developer in a team of 4.',
+      'Developed a sophisticated task scheduling system using symbolic AI and knowledge graphs. Leveraged MeTTa and Hyperon (AtomSpace) for advanced reasoning to automatically resolve and schedule complex task dependencies. Achieved a Top 7 finish (out of 80+ teams) at HackIndia Spark 3 2025. MeTTa developer in a team of 4.',
     techStack: ['Python', 'MeTTa', 'Hyperon', 'AtomSpace', 'Knowledge Graphs'],
     githubUrl: 'https://github.com/JosephJonathanFernandes/HackIndia-Spark-3-2025-WizCoders',
     category: 'ai-ml',
@@ -132,9 +132,9 @@ export const projects: Project[] = [
   {
     id: 'advanced-port-scanner',
     title: 'Advanced Port Scanner',
-    description: 'Multi-threaded network security scanner with vulnerability assessment and GUI. Solo.',
+    description: 'Multi-threaded network security scanner featuring CIDR support, banner grabbing, and service detection.',
     longDescription:
-      'A network security tool for penetration testing. Multi-threaded scanning, CIDR subnet support, banner grabbing, service detection, vulnerability assessment, and a Tkinter GUI with matplotlib visualizations. Written solo.',
+      'Built a multi-threaded network security scanner tailored for penetration testing. Features include CIDR subnet support, banner grabbing, service detection, and vulnerability assessment. Designed a custom Tkinter GUI with matplotlib visualizations for accessible reporting. Written solo.',
     techStack: ['Python', 'Tkinter', 'Matplotlib', 'Socket Programming', 'Threading'],
     githubUrl: 'https://github.com/JosephJonathanFernandes/advanced-port-scanner',
     category: 'security',
