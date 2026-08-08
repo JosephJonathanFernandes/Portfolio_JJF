@@ -8,8 +8,34 @@ import Contact from '@/components/contact';
 import Cursor from '@/components/cursor';
 
 export default function Home() {
+  // JSON-LD Structured Data for Google Knowledge Graph
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Joseph Jonathan Fernandes",
+    "url": "https://jjf-eight.vercel.app",
+    "jobTitle": "Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Visteon Corporation"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Goa Engineering College",
+      "alternateName": "GEC Goa"
+    },
+    "sameAs": [
+      "https://github.com/JosephJonathanFernandes",
+      "https://www.linkedin.com/in/joseph-jonathan-fernandes/"
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-grid-white relative overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Custom cursor — desktop only */}
       <Cursor />
 

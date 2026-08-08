@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   keywords: ["jjf", "joseph fernandes", "joseph jonathan fernandes", "jonathan fernandes", "GEC goa", "GEC", "Goa Engineering College", "Software Engineer", "Embedded Systems", "AI/ML", "Visteon"],
   authors: [{ name: "Joseph Jonathan Fernandes" }],
   creator: "Joseph Jonathan Fernandes",
+  alternates: {
+    canonical: 'https://jjf-eight.vercel.app',
+  },
   verification: {
     google: "986Zkw6ZeyvJr3soH1RN6sfav6aBQ5kkRASfRwHIJFk",
   },
