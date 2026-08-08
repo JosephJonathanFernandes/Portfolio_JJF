@@ -7,7 +7,7 @@ import { personalInfo, achievements } from '@/data/portfolio';
 
 /* --- Animated count-up hook --- */
 function useCountUp(target: number, decimals = 0) {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(target); // SSR: renders real value, not 0
   const ref = useRef<HTMLSpanElement>(null);
   const started = useRef(false);
 
@@ -15,6 +15,7 @@ function useCountUp(target: number, decimals = 0) {
     const obs = new IntersectionObserver(([entry]) => {
       if (!entry.isIntersecting || started.current) return;
       started.current = true;
+      setValue(0); // reset to 0 before animating (SSR already showed real value)
       const duration = 1400;
       const start = performance.now();
       const animate = (now: number) => {
@@ -24,7 +25,7 @@ function useCountUp(target: number, decimals = 0) {
         if (t < 1) requestAnimationFrame(animate);
         else setValue(target);
       };
-      requestAnimationFrame(animate);
+      setTimeout(() => requestAnimationFrame(animate), 50);
       obs.disconnect();
     }, { threshold: 0.5 });
     if (ref.current) obs.observe(ref.current);
@@ -89,9 +90,9 @@ export default function About() {
               From production ECU code<br />to real-time sign language recognition.
             </h3>
             <div className="space-y-5 text-zinc-400 leading-relaxed text-[15px]">
-              <p>Final-year Computer Engineering student at GEC Goa with an AI/ML Honors specialization.
-                Completed an embedded systems internship at Visteon Technical & Services Centre in 2025,
-                working on production AUTOSAR ECU modules. A Pre-Placement Offer has been accepted.</p>
+              <p>Computer Engineering graduate from GEC Goa (2022–2026), AI/ML Honors specialization, CGPA 9.778.
+                Joining <strong className="text-white">Visteon Corporation</strong> as a Software Engineer — preceded by an automotive embedded systems internship
+                achieving 100% unit-test coverage across 14 AUTOSAR production modules using VectorCAST.</p>
               <p>Projects span embedded C through applied AI. The Vāksetu ISL recognition system achieves
                 <strong className="text-white"> 98.33% accuracy</strong> across 300 sign classes at
                 <strong className="text-white"> 60+ FPS</strong> CPU inference.

@@ -8,10 +8,10 @@ import { personalInfo } from '@/data/portfolio';
 const ROLES = ['Embedded Systems Engineer', 'AI / ML Developer', 'Full-Stack Developer', 'Competitive Programmer'];
 
 const MARQUEE_ITEMS = [
-  '⚡  98.33% ISL Accuracy', '🏆  HackAura 2025 — 1st Place', '🚀  Visteon Pre-Placement Offer',
-  '🌐  70+ Public Repos', '📚  GATE CSE + DA', '🥇  Infofest — 1st Place', '🔬  47 NPTEL Courses',
-  '⚡  98.33% ISL Accuracy', '🏆  HackAura 2025 — 1st Place', '🚀  Visteon Pre-Placement Offer',
-  '🌐  70+ Public Repos', '📚  GATE CSE + DA', '🥇  Infofest — 1st Place', '🔬  47 NPTEL Courses',
+  '⚡  98.33% ISL Accuracy', '🏎️  AUTOSAR Production ECU', '🌐  15+ OSS Merged PRs',
+  '🔬  391× Faster Data Loading', '🏅  Odoo — National Finalist', '🧪  100% Module Test Coverage',
+  '⚡  98.33% ISL Accuracy', '🏎️  AUTOSAR Production ECU', '🌐  15+ OSS Merged PRs',
+  '🔬  391× Faster Data Loading', '🏅  Odoo — National Finalist', '🧪  100% Module Test Coverage',
 ];
 
 export default function Hero() {
@@ -47,10 +47,10 @@ export default function Hero() {
   }, []);
 
   const stats = [
-    { icon: Trophy,    label: 'Hackathon Win',  value: '1'    },
-    { icon: GitBranch, label: 'Public Repos',   value: '70+'  },
-    { icon: BookOpen,  label: 'NPTEL Courses',  value: '47'   },
-    { icon: Cpu,       label: 'GATE Qualified', value: 'CSE+DA'},
+    { icon: Trophy,    label: '1st-Place Wins',  value: '2'    },
+    { icon: GitBranch, label: 'Public Repos',    value: '70+'  },
+    { icon: BookOpen,  label: 'NPTEL Courses',   value: '47'   },
+    { icon: Cpu,       label: 'GATE Qualified',  value: 'CSE+DA'},
   ];
 
   const socials = [

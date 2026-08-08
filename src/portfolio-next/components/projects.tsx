@@ -143,8 +143,8 @@ export default function Projects() {
               <h3 className="section-heading text-2xl text-white">Other Notable Projects</h3>
             </motion.div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-24">
-              {others.map((project, i) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-5 mb-10">
+              {others.slice(0, 4).map((project, i) => (
                 <motion.div key={project.id}
                   initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: i * 0.07 }} viewport={{ once: true }}
@@ -183,6 +183,16 @@ export default function Projects() {
                   )}
                 </motion.div>
               ))}
+            </div>
+
+            {/* View all on GitHub */}
+            <div className="text-center mb-24">
+              <a href="https://github.com/JosephJonathanFernandes?tab=repositories" target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 px-6 py-3 glass-panel text-zinc-400 hover:text-white text-sm font-medium rounded-full border border-white/8 hover:border-white/20 transition-all duration-300 group">
+                <Github className="w-4 h-4" />
+                View all 70+ repositories on GitHub
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </a>
             </div>
           </>
         )}

@@ -1,5 +1,5 @@
 // Portfolio data — all content verified against user-provided ground truth
-// Last verified: 2026-08-06
+// Last verified: 2026-08-08
 
 export interface Project {
   id: string;
@@ -35,6 +35,19 @@ export interface Experience {
 }
 
 export const projects: Project[] = [
+  // === FEATURED — rendered in this order ===
+  {
+    id: 'adas-fusion',
+    title: 'Multi-Sensor Fusion ADAS',
+    description: 'Low-cost predictive collision prevention and adaptive driver safety system built on Arduino Uno using multi-sensor fusion.',
+    longDescription:
+      'Designed and implemented a low-cost, multi-sensor embedded safety system (ADAS) on an Arduino Uno. Fuses biometric driver-condition monitoring (MQ-3 alcohol sensor, dual IR sensors) with environmental sensing (HC-SR04 ultrasonic, SW-420 vibration, LDR). Features a custom cumulative weighted risk-scoring algorithm with predictive collision detection and non-blocking multi-actuator response.',
+    techStack: ['C++', 'Arduino', 'Sensor Fusion', 'Embedded Systems'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/Arduino-Mini-ADAS-prototype',
+    category: 'embedded',
+    featured: true,
+    role: 'Solo',
+  },
   {
     id: 'vaksetu',
     title: 'Vāksetu',
@@ -61,6 +74,20 @@ export const projects: Project[] = [
     role: 'Solo',
   },
   {
+    id: 'collatz-analyzer',
+    title: 'Collatz Sequence Analyzer',
+    description: '21-module multithreaded C++ research platform — 3.3x speedup, R² up to 0.999995 across 50M integers.',
+    longDescription:
+      'A 21-module multithreaded C++ research platform analyzing the Collatz conjecture across 50 million integers. Multithreading and path caching deliver a 3.3x speedup (11.7s → 3.6s). Includes a reproducible benchmarking and regression pipeline with R-squared fit up to 0.999995 via statistical modeling in R. Full CMake build system.',
+    techStack: ['C++', 'CMake', 'Multithreading', 'R', 'Statistical Modeling'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/high-performance-collatz-analyzer',
+    category: 'systems',
+    featured: true,
+    role: 'Solo',
+  },
+
+  // === OTHER NOTABLE (top 4 shown on page, rest link to GitHub) ===
+  {
     id: 'crowdsense',
     title: 'CrowdSense',
     description: 'Real-time disaster detection via social media NLP. Most-starred original repo.',
@@ -69,21 +96,9 @@ export const projects: Project[] = [
     techStack: ['Python', 'Flask', 'spaCy', 'Twilio', 'SQLite', 'Leaflet', 'NLP'],
     githubUrl: 'https://github.com/JosephJonathanFernandes/CrowdSense',
     category: 'ai-ml',
-    featured: true,
+    featured: false,
     role: 'Full-stack, backend-focused',
     teamSize: 4,
-  },
-  {
-    id: 'collatz-analyzer',
-    title: 'Collatz Sequence Analyzer',
-    description: '21-module multithreaded C++ research platform — 3.3x speedup, R2 up to 0.999995 across 50M integers.',
-    longDescription:
-      'A 21-module multithreaded C++ research platform analyzing the Collatz conjecture across 50 million integers. Multithreading and path caching deliver a 3.3x speedup (11.7s -> 3.6s). Includes a reproducible benchmarking and regression pipeline with R-squared fit up to 0.999995 via statistical modeling in R. Full CMake build system.',
-    techStack: ['C++', 'CMake', 'Multithreading', 'R', 'Statistical Modeling'],
-    githubUrl: 'https://github.com/JosephJonathanFernandes/high-performance-collatz-analyzer',
-    category: 'systems',
-    featured: true,
-    role: 'Solo',
   },
   {
     id: 'exoscope',
@@ -101,6 +116,45 @@ export const projects: Project[] = [
     teamSize: 4,
   },
   {
+    id: 'hackindia-spark-3',
+    title: 'TaskExpert',
+    description: 'Knowledge graph task scheduler with MeTTa-based reasoning. HackIndia Spark 3 2025 — top 7 of 80+ teams.',
+    longDescription:
+      'Built for HackIndia Spark 3 2025, finishing top 7 of 80+ teams in the Goa region. Uses knowledge graphs and MeTTa-based reasoning (Hyperon, AtomSpace) for intelligent task scheduling with automatic dependency resolution. MeTTa developer in a team of 4.',
+    techStack: ['Python', 'MeTTa', 'Hyperon', 'AtomSpace', 'Knowledge Graphs'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/HackIndia-Spark-3-2025-WizCoders',
+    category: 'ai-ml',
+    featured: false,
+    achievement: 'HackIndia Spark 3 2025 — Top 7 of 80+ teams',
+    role: 'MeTTa developer',
+    teamSize: 4,
+  },
+  {
+    id: 'advanced-port-scanner',
+    title: 'Advanced Port Scanner',
+    description: 'Multi-threaded network security scanner with vulnerability assessment and GUI. Solo.',
+    longDescription:
+      'A network security tool for penetration testing. Multi-threaded scanning, CIDR subnet support, banner grabbing, service detection, vulnerability assessment, and a Tkinter GUI with matplotlib visualizations. Written solo.',
+    techStack: ['Python', 'Tkinter', 'Matplotlib', 'Socket Programming', 'Threading'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/advanced-port-scanner',
+    category: 'security',
+    featured: false,
+    role: 'Solo',
+  },
+
+  // === NOT SHOWN on page (available on GitHub) ===
+  {
+    id: 'hackguard',
+    title: 'HackGuard',
+    description: 'AI-powered hackathon integrity platform. Analyzes repos against time windows to flag suspicious activity.',
+    longDescription:
+      'Risk-scoring, not verdicts: an AI-powered hackathon integrity platform that analyzes submitted GitHub repos against declared hackathon time windows. It surfaces evidence (commit timestamps, massive code dumps) for judges to review. Built with a philosophy that it never accuses, but intelligently flags anomalies for human review.',
+    techStack: ['Python', 'AI'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/HackGuard-AI-powered-hackathon-integrity-platform',
+    category: 'ai-ml',
+    featured: false,
+  },
+  {
     id: 'astrodesk',
     title: 'AstroDesk',
     description: 'Space exploration platform with live NASA APIs and multi-agent AI. Coders Club Hackathon 2025.',
@@ -113,20 +167,6 @@ export const projects: Project[] = [
     featured: false,
     achievement: 'Coders Club Hackathon 2025',
     role: 'Core full-stack',
-    teamSize: 4,
-  },
-  {
-    id: 'hackindia-spark-3',
-    title: 'TaskExpert',
-    description: 'Knowledge graph task scheduler with MeTTa-based reasoning. HackIndia Spark 3 2025 — top 7 of 80+ teams.',
-    longDescription:
-      'Built for HackIndia Spark 3 2025, finishing top 7 of 80+ teams in the Goa region. Uses knowledge graphs and MeTTa-based reasoning (Hyperon, AtomSpace) for intelligent task scheduling with automatic dependency resolution. MeTTa developer in a team of 4.',
-    techStack: ['Python', 'MeTTa', 'Hyperon', 'AtomSpace', 'Knowledge Graphs'],
-    githubUrl: 'https://github.com/JosephJonathanFernandes/HackIndia-Spark-3-2025-WizCoders',
-    category: 'ai-ml',
-    featured: false,
-    achievement: 'HackIndia Spark 3 2025 — Top 7 of 80+ teams',
-    role: 'MeTTa developer',
     teamSize: 4,
   },
   {
@@ -144,29 +184,6 @@ export const projects: Project[] = [
     teamSize: 4,
   },
   {
-    id: 'advanced-port-scanner',
-    title: 'Advanced Port Scanner',
-    description: 'Multi-threaded network security scanner with vulnerability assessment and GUI. Solo.',
-    longDescription:
-      'A network security tool for penetration testing. Multi-threaded scanning, CIDR subnet support, banner grabbing, service detection, vulnerability assessment, and a Tkinter GUI with matplotlib visualizations. Written solo.',
-    techStack: ['Python', 'Tkinter', 'Matplotlib', 'Socket Programming', 'Threading'],
-    githubUrl: 'https://github.com/JosephJonathanFernandes/advanced-port-scanner',
-    category: 'security',
-    featured: false,
-    role: 'Solo',
-  },
-  {
-    id: 'hackguard',
-    title: 'HackGuard',
-    description: 'AI-powered hackathon integrity platform. Analyzes repos against time windows to flag suspicious activity.',
-    longDescription:
-      'Risk-scoring, not verdicts: an AI-powered hackathon integrity platform that analyzes submitted GitHub repos against declared hackathon time windows. It surfaces evidence (commit timestamps, massive code dumps) for judges to review. Built with a philosophy that it never accuses, but intelligently flags anomalies for human review.',
-    techStack: ['Python', 'AI'],
-    githubUrl: 'https://github.com/JosephJonathanFernandes/HackGuard-AI-powered-hackathon-integrity-platform',
-    category: 'ai-ml',
-    featured: true,
-  },
-  {
     id: 'ipv-streamlit',
     title: 'Image Processing & Vision Suite',
     description: 'Interactive Streamlit web app showcasing diverse image enhancement algorithms, filters, and computer vision techniques.',
@@ -178,9 +195,20 @@ export const projects: Project[] = [
     featured: false,
   },
   {
+    id: 'langchain-book-recommender',
+    title: 'AI Book Recommender',
+    description: 'A modular book recommendation system designed with Clean Code, SOLID principles, and LangChain.',
+    longDescription:
+      'A modular book recommendation system built with professional engineering standards including Clean Code, SOLID principles, and GitGuardian security. Leverages LangChain for intelligent semantic retrieval and context-aware recommendations.',
+    techStack: ['Python', 'LangChain', 'LLMs', 'Clean Code'],
+    githubUrl: 'https://github.com/JosephJonathanFernandes/Book_Recommender_Using_Langchain',
+    category: 'ai-ml',
+    featured: false,
+  },
+  {
     id: 'cgpa-calculator',
     title: 'CGPA Calculator',
-    description: 'A human-centered Streamlit app for calculating CGPA with semester-level credit control and partial semester support.',
+    description: 'A human-centered Streamlit app for calculating CGPA with semester-level credit control.',
     longDescription:
       'A human-centered Streamlit web application designed for students to easily calculate and forecast their CGPA. Features include semester-level credit control, partial semester support, and quick visual insights into academic performance trends.',
     techStack: ['Python', 'Streamlit'],
@@ -189,22 +217,11 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 'adas-fusion',
-    title: 'Multi-Sensor Fusion ADAS',
-    description: 'Low-cost, predictive collision prevention and adaptive driver safety system built on Arduino Uno using multi-sensor fusion.',
-    longDescription:
-      'Designed and implemented a low-cost, multi-sensor embedded safety system (ADAS) on an Arduino Uno. Fuses biometric driver-condition monitoring (MQ-3 alcohol sensor, dual IR sensors) with environmental sensing (HC-SR04 ultrasonic, SW-420 vibration, LDR). Features a custom cumulative weighted risk-scoring algorithm with predictive collision detection and non-blocking multi-actuator response.',
-    techStack: ['C++', 'Arduino', 'Sensor Fusion', 'Embedded Systems'],
-    githubUrl: 'https://github.com/JosephJonathanFernandes/Arduino-Mini-ADAS-prototype',
-    category: 'embedded',
-    featured: true,
-  },
-  {
     id: 'inventory-management-cpp',
     title: 'C++ Inventory Management',
-    description: 'Modular C++ inventory system with file-based persistence, demonstrating OOP best practices, memory safety, and clean architecture.',
+    description: 'Modular C++ inventory system with file-based persistence, demonstrating OOP best practices and clean architecture.',
     longDescription:
-      'A professional, modular C++ inventory management system with file-based persistence built as an OOPS course project. It demonstrates best practices in C++ development, emphasizing proper code organization, memory safety, and clean architecture.',
+      'A professional, modular C++ inventory management system with file-based persistence. Demonstrates best practices in C++ development, emphasizing proper code organization, memory safety, and clean architecture.',
     techStack: ['C++', 'OOP', 'File Handling'],
     githubUrl: 'https://github.com/JosephJonathanFernandes/inventory-management-cpp',
     category: 'systems',
@@ -215,21 +232,10 @@ export const projects: Project[] = [
     title: 'Smart C++ To-Do List',
     description: 'A smart CLI to-do list built in C++ utilizing a Min Heap for priority-based task management.',
     longDescription:
-      'A performance-focused command-line application built in C++. It utilizes advanced data structures like Min Heaps to manage task priorities efficiently. Features include priority-based sorting, due date tracking, and an interactive colored terminal output for an enhanced developer experience.',
+      'A performance-focused command-line application built in C++. Uses Min Heaps for priority-based task management with due date tracking and colored terminal output.',
     techStack: ['C++', 'Data Structures', 'CLI'],
     githubUrl: 'https://github.com/JosephJonathanFernandes/SmartToDoList-CPP',
     category: 'systems',
-    featured: false,
-  },
-  {
-    id: 'langchain-book-recommender',
-    title: 'AI Book Recommender',
-    description: 'A modular book recommendation system designed with Clean Code, SOLID principles, and LangChain.',
-    longDescription:
-      'A modular book recommendation system built with professional engineering standards including Clean Code, SOLID principles, and GitGuardian security. Leverages LangChain for intelligent semantic retrieval and context-aware recommendations.',
-    techStack: ['Python', 'LangChain', 'LLMs', 'Clean Code'],
-    githubUrl: 'https://github.com/JosephJonathanFernandes/Book_Recommender_Using_Langchain',
-    category: 'ai-ml',
     featured: false,
   },
 ];
@@ -290,7 +296,7 @@ export const experience: Experience[] = [
       'Created internal documentation and Teams resources adopted by the broader team',
     ],
     technologies: ['C', 'C++', 'AUTOSAR', 'MISRA-C', 'CERT-C', 'VectorCAST', 'Klocwork', 'Python', 'GitLab', 'JIRA', 'WSL2'],
-    note: 'Pre-Placement Offer (SDE) accepted.',
+    note: 'Joining full-time as Software Engineer (SDE).',
   },
 ];
 
@@ -298,11 +304,9 @@ export const achievements: string[] = [
   'HackAura 2025 — 1st place, national-level hackathon (30 teams)',
   'Infofest 2025 — 1st place competitive programming, Goa University',
   'HackIndia Spark 3 2025 — Top 7 of 80+ teams (Goa)',
+  'Odoo Hackathon — National Finalist (NMIT Bangalore), selected from 200+ teams in online qualifiers',
   'GATE qualified — CSE and DA (both 2025 and 2026)',
-  'NPTEL — 47 courses at top recognition tiers: Domain Scholar (Programming & Data Science), Superstar, Megastar, Evangelist, Discipline and many more',
-  'Technix Quiz — co-organized state-level technical quiz (2023, 2025,2026)',
-  'Quizzing & Debating — 9x 1st-place finishes at major intercollegiate events (NIT Goa, Goa University), state-level RBI Quiz finalist, and represented GEC at the Goa Vidhan Sabha',
-  'CodeChef rating 1025 · HackerRank badges in C, Python, SQL, Java',
-  'Odoo Hackathon — National Finalist (NMIT Bangalore), selected from 200+ teams in the online qualifiers',
+  'NPTEL — 47 courses at top recognition tiers: Domain Scholar (Programming & Data Science), Superstar, Megastar, Evangelist',
+  'Quizzing & Debating — 9x 1st-place finishes at major intercollegiate events (NIT Goa, Goa University), state-level RBI Quiz finalist, represented GEC at the Goa Vidhan Sabha',
   'Open Source: 15+ merged pull requests to major repositories, including 14 PRs to public-apis (300k+ stars)',
 ];
