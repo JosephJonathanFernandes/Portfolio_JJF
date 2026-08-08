@@ -47,7 +47,7 @@ export default function Hero() {
   }, []);
 
   const stats = [
-    { icon: Trophy,    label: '1st-Place Wins',  value: '2'    },
+    { icon: Trophy,    label: 'Hackathon Win',   value: '1'    },
     { icon: GitBranch, label: 'Public Repos',    value: '70+'  },
     { icon: BookOpen,  label: 'NPTEL Courses',   value: '47'   },
     { icon: Cpu,       label: 'GATE Qualified',  value: 'CSE+DA'},
