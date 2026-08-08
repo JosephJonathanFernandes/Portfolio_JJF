@@ -16,25 +16,25 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://jjf-eight.vercel.app'),
-  title: "Joseph Jonathan Fernandes | Embedded-first Software Engineer",
-  description: "Final-year CE student, AI/ML Honors. Embedded systems intern at Visteon with PPO. Built ISL recognition (98.3% acc) & CmdBridge. 70+ public repos.",
-  keywords: ["Joseph Jonathan Fernandes", "Software Engineer", "Embedded Systems", "AI/ML", "Full-Stack Developer", "Visteon", "NASA Space Apps", "GEC Goa"],
+  title: "Joseph Jonathan Fernandes | Systems & AI Software Engineer",
+  description: "Systems and AI Software Engineer joining Visteon. Built real-time ISL recognition (98.33% acc) & CmdBridge. Computer Engineering graduate from GEC Goa.",
+  keywords: ["jjf", "joseph fernandes", "joseph jonathan fernandes", "jonathan fernandes", "GEC goa", "GEC", "Goa Engineering College", "Software Engineer", "Embedded Systems", "AI/ML", "Visteon"],
   authors: [{ name: "Joseph Jonathan Fernandes" }],
   creator: "Joseph Jonathan Fernandes",
   icons: {
     icon: '/favicon.svg',
   },
   openGraph: {
-    title: "Joseph Jonathan Fernandes | Embedded-first Software Engineer",
-    description: "From production AUTOSAR ECU modules to real-time ISL recognition. CE student, Visteon intern, 70+ public repos.",
+    title: "Joseph Jonathan Fernandes | Systems & AI Software Engineer",
+    description: "From production AUTOSAR ECU modules to real-time ISL recognition. Systems & AI Software Engineer from GEC Goa.",
     url: "https://jjf-eight.vercel.app",
     siteName: "Joseph Jonathan Fernandes Portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Joseph Jonathan Fernandes | Embedded-first Software Engineer",
-    description: "From production AUTOSAR ECU modules to real-time ISL recognition.",
+    title: "Joseph Jonathan Fernandes | Systems & AI Software Engineer",
+    description: "From production AUTOSAR ECU modules to real-time ISL recognition. Systems & AI Software Engineer from GEC Goa.",
   },
 };
 
