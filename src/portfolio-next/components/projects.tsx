@@ -62,7 +62,7 @@ export default function Projects() {
           <h2 className="section-heading text-4xl text-white mb-6">Featured Projects</h2>
           <div className="w-12 h-px bg-white/20 mx-auto mb-8" />
           <p className="text-zinc-500 max-w-xl mx-auto leading-relaxed text-sm">
-            Work spanning AI/ML, embedded systems, full-stack web, and systems programming.
+            Embedded systems, applied AI, security, and full-stack — roughly in that order of interest.
           </p>
         </motion.div>
 
@@ -197,23 +197,17 @@ export default function Projects() {
           </>
         )}
 
-        {/* GitHub Activity */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }} viewport={{ once: true }}>
           <div className="glass-panel-elevated p-10 md:p-14 text-center relative overflow-hidden">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px bg-gradient-to-r from-transparent via-indigo-400/25 to-transparent" />
             <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.03] to-transparent pointer-events-none" />
             <div className="relative z-10">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-600 mb-4">On GitHub</p>
-              <h3 className="section-heading text-3xl text-white mb-12">GitHub Activity</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-                {[['70+','Public Repos'],['4','Hackathon Projects'],['1','Hackathon Win'],['47','NPTEL Courses']].map(([v,l]) => (
-                  <div key={l}>
-                    <div className="text-4xl font-extrabold text-white mb-2 font-display tracking-tight">{v}</div>
-                    <div className="text-xs font-semibold uppercase tracking-widest text-zinc-600">{l}</div>
-                  </div>
-                ))}
-              </div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-600 mb-4">Open Source</p>
+              <h3 className="section-heading text-3xl text-white mb-4">15+ merged PRs</h3>
+              <p className="text-zinc-500 text-sm max-w-md mx-auto mb-10 leading-relaxed">
+                Including 14 pull requests to <strong className="text-zinc-300">public-apis</strong> (300k+ GitHub stars) and contributions to other public repositories.
+              </p>
               <a href="https://github.com/JosephJonathanFernandes" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-zinc-100 transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_50px_rgba(255,255,255,0.2)] hover:scale-105">
                 <Github className="w-5 h-5" /> View GitHub Profile

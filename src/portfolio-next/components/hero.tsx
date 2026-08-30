@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown, Github, Linkedin, Mail, ExternalLink, Trophy, GitBranch, BookOpen, Cpu } from 'lucide-react';
 import { personalInfo } from '@/data/portfolio';
 
-const ROLES = ['Systems Software Engineer', 'AI / ML Developer', 'Full-Stack Developer', 'Competitive Programmer'];
+const ROLES = ['Systems Software Engineer', 'AI / ML Developer', 'Full-Stack Developer'];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);

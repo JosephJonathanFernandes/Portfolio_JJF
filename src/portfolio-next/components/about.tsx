@@ -77,7 +77,6 @@ export default function About() {
 
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }} viewport={{ once: true }} className="text-center mb-20">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-600 mb-4">Who I am</p>
           <h2 className="section-heading text-4xl text-white mb-6">About</h2>
           <div className="w-12 h-px bg-white/20 mx-auto" />
         </motion.div>
@@ -87,19 +86,13 @@ export default function About() {
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }} viewport={{ once: true }}>
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-8 font-display tracking-tight leading-snug">
-              From production ECU code<br />to real-time sign language recognition.
+              Computer Engineering, GEC Goa<br />CGPA 9.78 · AI/ML Honors
             </h3>
             <div className="space-y-5 text-zinc-400 leading-relaxed text-[15px]">
-              <p>Computer Engineering graduate from GEC Goa (2022–2026), AI/ML Honors specialization, CGPA 9.78.
-                Joining <strong className="text-white">Visteon Corporation</strong> as a Software Engineer — preceded by an automotive embedded systems internship
-                achieving 100% unit-test coverage across 14 AUTOSAR production modules using VectorCAST.</p>
-              <p>Projects span embedded C through applied AI. The Vāksetu ISL recognition system achieves
-                <strong className="text-white"> 98.33% accuracy</strong> across 300 sign classes at
-                <strong className="text-white"> 60+ FPS</strong> CPU inference.
-                CmdBridge maps natural-language intent to native OS APIs in C with
-                <strong className="text-white"> 94% test coverage</strong>.</p>
-              <p>GATE qualified in both CSE and DA. 47 NPTEL courses at top recognition tiers —
-                Domain Scholar, Superstar, Megastar, and Evangelist.</p>
+              <p>Software Engineer at <strong className="text-white">Visteon Corporation</strong>, working on automotive software. During my internship there, I achieved 100% branch and statement coverage across 14 AUTOSAR production ECU modules using VectorCAST, and analyzed 100K+ MISRA-C/CERT-C static warnings.</p>
+              <p>My final-year project, Vāksetu, is a real-time Indian Sign Language recognition system that runs at
+                <strong className="text-white"> 98.33% accuracy</strong> across 300 sign classes at <strong className="text-white">60+ FPS</strong> on CPU — no GPU required. I also built CmdBridge, a cross-platform terminal assistant in C with <strong className="text-white">94% test coverage</strong> across 211 tests.</p>
+              <p>GATE qualified in CSE and DA. 47 NPTEL certifications across programming and data science tracks.</p>
             </div>
           </motion.div>
 
