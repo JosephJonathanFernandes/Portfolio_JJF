@@ -64,9 +64,9 @@ export const projects: Project[] = [
   {
     id: 'cmdbridge',
     title: 'CmdBridge',
-    description: 'Cross-platform natural-language terminal assistant in C. Maps NL intent to native OS APIs — no raw shell execution.',
+    description: 'Cross-platform natural-language terminal assistant in C. Reduces injection-style risks by avoiding raw shell execution.',
     longDescription:
-      'Cross-platform terminal assistant that maps natural-language user intent to native OS APIs instead of executing raw shell commands, eliminating a class of command-injection vulnerabilities. Features secure intent parsing with explain-before-execute validation. 94% automated test coverage across 211 unit and integration tests using AddressSanitizer, UndefinedBehaviorSanitizer, and CI. Supports Windows, Linux, and macOS.',
+      'Cross-platform terminal assistant that maps natural-language user intent to native OS APIs, reducing injection-style risks by avoiding raw shell execution. Features secure intent parsing with explain-before-execute validation. 94% automated test coverage across 211 unit and integration tests using AddressSanitizer, UndefinedBehaviorSanitizer, and CI. Supports Windows, Linux, and macOS.',
     techStack: ['C', 'CMake', 'AddressSanitizer', 'UndefinedBehaviorSanitizer', 'CI'],
     githubUrl: 'https://github.com/JosephJonathanFernandes/CmdBridge-Smart-Cross-OS-Terminal-Helper',
     category: 'systems',
@@ -300,13 +300,19 @@ export const experience: Experience[] = [
   },
 ];
 
-export const achievements: string[] = [
-  'HackAura 2025 — 1st place, national-level hackathon (30 teams)',
-  'Infofest 2025 — 1st place competitive programming, Goa University',
-  'HackIndia Spark 3 2025 — Top 7 of 80+ teams (Goa)',
-  'Odoo Hackathon — National Finalist (NMIT Bangalore), selected from 200+ teams in online qualifiers',
-  'GATE qualified — CSE and DA (both 2025 and 2026)',
-  'NPTEL — 47 courses at top recognition tiers: Domain Scholar (Programming & Data Science), Superstar, Megastar, Evangelist',
-  'Quizzing & Debating — 9x 1st-place finishes at major intercollegiate events (NIT Goa, Goa University), state-level RBI Quiz finalist, represented GEC at the Goa Vidhan Sabha',
-  'Open Source: 15+ merged pull requests to major repositories, including 14 PRs to public-apis (300k+ stars)',
-];
+export const achievements = {
+  hackathons: [
+    'HackAura 2025 — 1st place, national-level hackathon (30 teams)',
+    'HackIndia Spark 3 2025 — Top 7 of 80+ teams (Goa)',
+    'Odoo Hackathon — National Finalist (NMIT Bangalore), selected from 200+ teams in online qualifiers',
+  ],
+  academic: [
+    'GATE qualified — CSE and DA (both 2025 and 2026)',
+    'NPTEL — 47 courses at top recognition tiers: Domain Scholar (Programming & Data Science), Superstar, Megastar, Evangelist',
+  ],
+  other: [
+    'Infofest 2025 — 1st place competitive programming, Goa University',
+    'Quizzing & Debating — 9x 1st-place finishes at major intercollegiate events (NIT Goa, Goa University), state-level RBI Quiz finalist, represented GEC at the Goa Vidhan Sabha',
+    'Open Source: 15+ merged pull requests to major repositories, including 14 PRs to public-apis (300k+ stars)',
+  ]
+};

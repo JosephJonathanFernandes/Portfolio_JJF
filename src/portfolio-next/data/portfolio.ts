@@ -23,7 +23,7 @@ export const personalInfo = {
   education: {
     degree: 'Computer Engineering (AI/ML Honors)',
     institution: 'Government Engineering College, Goa',
-    cgpa: '9.778',
+    cgpa: '9.78',
     status: '2022–2026',
   }
 };

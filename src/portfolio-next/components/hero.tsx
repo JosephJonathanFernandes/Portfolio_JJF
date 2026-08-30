@@ -5,14 +5,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown, Github, Linkedin, Mail, ExternalLink, Trophy, GitBranch, BookOpen, Cpu } from 'lucide-react';
 import { personalInfo } from '@/data/portfolio';
 
-const ROLES = ['Embedded Systems Engineer', 'AI / ML Developer', 'Full-Stack Developer', 'Competitive Programmer'];
-
-const MARQUEE_ITEMS = [
-  '⚡  98.33% ISL Accuracy', '🏎️  AUTOSAR Production ECU', '🌐  15+ OSS Merged PRs',
-  '🔬  391× Faster Data Loading', '🏅  Odoo — National Finalist', '🧪  100% Module Test Coverage',
-  '⚡  98.33% ISL Accuracy', '🏎️  AUTOSAR Production ECU', '🌐  15+ OSS Merged PRs',
-  '🔬  391× Faster Data Loading', '🏅  Odoo — National Finalist', '🧪  100% Module Test Coverage',
-];
+const ROLES = ['Systems Software Engineer', 'AI / ML Developer', 'Full-Stack Developer', 'Competitive Programmer'];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -47,10 +40,10 @@ export default function Hero() {
   }, []);
 
   const stats = [
-    { icon: Trophy,    label: 'Hackathon Win',   value: '1'    },
-    { icon: GitBranch, label: 'Public Repos',    value: '70+'  },
-    { icon: BookOpen,  label: 'NPTEL Courses',   value: '47'   },
-    { icon: Cpu,       label: 'GATE Qualified',  value: 'CSE+DA'},
+    { icon: Trophy,    label: 'ISL Accuracy',   value: '98.3%' },
+    { icon: Cpu,       label: 'AUTOSAR ECU',    value: 'Prod'  },
+    { icon: GitBranch, label: 'OSS Merged PRs', value: '15+'   },
+    { icon: BookOpen,  label: 'GATE Qualified', value: 'CSE+DA'},
   ];
 
   const socials = [
@@ -166,14 +159,7 @@ export default function Hero() {
         </motion.button>
       </div>
 
-      {/* Scrolling marquee ticker */}
-      <div className="absolute bottom-0 left-0 right-0 overflow-hidden border-t border-white/5 py-3 pointer-events-none select-none">
-        <div className="flex gap-8 marquee whitespace-nowrap w-max">
-          {MARQUEE_ITEMS.map((item, i) => (
-            <span key={i} className="text-[11px] text-zinc-700 font-medium tracking-widest uppercase">{item}</span>
-          ))}
-        </div>
-      </div>
+
 
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none z-10" />
     </section>

@@ -63,7 +63,7 @@ export default function Contact() {
           <h2 className="section-heading text-4xl text-white mb-6">Contact</h2>
           <div className="w-12 h-px bg-white/20 mx-auto mb-8" />
           <p className="text-zinc-500 max-w-xl mx-auto leading-relaxed">
-            I am joining Visteon as a Software Engineer, but I'm always open to discussing open source, research, or interesting tech. Direct email is fastest.
+            I am joining Visteon as a Software Engineer, but I'm always open to research collaborations and technical discussions. Direct email is fastest.
           </p>
         </motion.div>
 
@@ -114,9 +114,9 @@ export default function Contact() {
             {/* Available for */}
             <div className="glass-panel p-6 relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-400/20 to-transparent" />
-              <h4 className="text-xs font-bold uppercase tracking-widest text-zinc-500 mb-5">Available for</h4>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-zinc-500 mb-5">Open to</h4>
               <ul className="space-y-3">
-                {['Open source collaborations', 'Research opportunities', 'Hackathons & Events', 'Technical discussions'].map((item) => (
+                {['Research collaborations', 'Technical discussions'].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-zinc-400 text-sm">
                     <CheckCircle className="w-4 h-4 text-emerald-500/60 flex-shrink-0" />
                     {item}

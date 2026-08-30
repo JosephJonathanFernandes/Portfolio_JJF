@@ -66,7 +66,7 @@ export default function About() {
     { icon: Code,          label: 'Public GitHub Repos', numericValue: 70, displaySuffix: '+' },
     { icon: Award,         label: 'GATE Qualified',       numericValue: 2,  displaySuffix: ' Tracks' },
     { icon: BookOpen,      label: 'NPTEL Courses',        numericValue: 47  },
-    { icon: GraduationCap, label: 'CGPA',                 numericValue: 9.778, decimals: 3 },
+    { icon: GraduationCap, label: 'CGPA',                 numericValue: 9.78, decimals: 2 },
   ];
 
   return (
@@ -90,7 +90,7 @@ export default function About() {
               From production ECU code<br />to real-time sign language recognition.
             </h3>
             <div className="space-y-5 text-zinc-400 leading-relaxed text-[15px]">
-              <p>Computer Engineering graduate from GEC Goa (2022–2026), AI/ML Honors specialization, CGPA 9.778.
+              <p>Computer Engineering graduate from GEC Goa (2022–2026), AI/ML Honors specialization, CGPA 9.78.
                 Joining <strong className="text-white">Visteon Corporation</strong> as a Software Engineer — preceded by an automotive embedded systems internship
                 achieving 100% unit-test coverage across 14 AUTOSAR production modules using VectorCAST.</p>
               <p>Projects span embedded C through applied AI. The Vāksetu ISL recognition system achieves
@@ -123,16 +123,27 @@ export default function About() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-600 mb-3">Recognition</p>
             <h3 className="section-heading text-2xl text-white">Achievements</h3>
           </div>
-          <div className="grid md:grid-cols-2 gap-4">
-            {achievements.map((a, i) => (
-              <motion.div key={i}
-                initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: i * 0.06 }} viewport={{ once: true }}
-                whileHover={{ x: 5, transition: { duration: 0.15 } }}
-                className="glass-panel px-6 py-5 flex items-start gap-4 group hover:border-white/20 transition-all duration-300">
-                <div className="w-1.5 h-1.5 rounded-full bg-indigo-400/50 mt-2 shrink-0 group-hover:bg-indigo-400 group-hover:shadow-[0_0_8px_rgba(129,140,248,0.6)] transition-all" />
-                <p className="text-zinc-400 text-sm leading-relaxed group-hover:text-zinc-300 transition-colors">{a}</p>
-              </motion.div>
+          <div className="space-y-10">
+            {[
+              { title: 'Hackathons & Competitions', items: achievements.hackathons },
+              { title: 'Academic', items: achievements.academic },
+              { title: 'Quizzing, Debating & Open Source', items: achievements.other }
+            ].map((section, idx) => (
+              <div key={section.title}>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-zinc-500 mb-5 pl-2">{section.title}</h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {section.items.map((a, i) => (
+                    <motion.div key={i}
+                      initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: i * 0.06 + idx * 0.1 }} viewport={{ once: true }}
+                      whileHover={{ x: 5, transition: { duration: 0.15 } }}
+                      className="glass-panel px-6 py-5 flex items-start gap-4 group hover:border-white/20 transition-all duration-300">
+                      <div className="w-1.5 h-1.5 rounded-full bg-indigo-400/50 mt-2 shrink-0 group-hover:bg-indigo-400 group-hover:shadow-[0_0_8px_rgba(129,140,248,0.6)] transition-all" />
+                      <p className="text-zinc-400 text-sm leading-relaxed group-hover:text-zinc-300 transition-colors">{a}</p>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </motion.div>
