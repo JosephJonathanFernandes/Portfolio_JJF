@@ -14,7 +14,7 @@ export {
 export const personalInfo = {
   name: 'Joseph Jonathan Fernandes',
   title: 'Systems & AI Software Engineer',
-  tagline: 'Software Engineer at Visteon. I work on embedded systems, applied AI, and systems programming in C.',
+  tagline: 'Software Engineer at Visteon. My work spans automotive embedded systems, Python-based test automation, and systems programming in C/C++.',
   email: 'josephfernandes273@gmail.com',
   github: 'https://github.com/JosephJonathanFernandes',
   linkedin: 'https://www.linkedin.com/in/joseph-jonathan-fernandes/',
